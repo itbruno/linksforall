@@ -67,16 +67,19 @@ header {
     transform: rotate(-30deg);
     border-radius: 100%;
 }
+
 .circle-blue {
     left: -50px;
     top: -100px;
     background: #556BDA;
+    animation: animaCircles 1.3s ease forwards;
 }
 
 .circle-orange {
     right: -180px;
     bottom: -130px;
     background: #FFA45A;
+    animation: animaCircles 1.3s ease forwards;
 }
 
 /* Header - User info */
@@ -277,4 +280,16 @@ header {
 
 .btn-share img {
     width: 18px;
+}
+
+@keyframes animaCircles {
+    from {
+        width: 0;
+        height: 0;
+    }
+
+    to {
+        height: 250px;
+        width: 400px;
+    }
 }
