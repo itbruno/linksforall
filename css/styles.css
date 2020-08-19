@@ -14,6 +14,7 @@ body {
     margin: 0;
     padding: 0;
     background: #FAFEFF;
+    color: #242126;
 }
 
 input,
@@ -28,12 +29,19 @@ ul {
     margin: 0;
 }
 
+h2 {
+    font-size: 1.2rem;
+    color: #495ECA;
+    display: block;
+}
+
 .container {
     max-width: 680px;
     display: flex;
     margin: 0 auto;
     padding: 0 30px;
     position: relative;
+    flex-direction: column;
 }
 
 .offset-nav {
@@ -133,7 +141,7 @@ header {
 /* Categories Navigation */
 .nav-categories {
     position: relative;
-    top: -40px;
+    margin-top: -40px;
 }
 
 .nav-categories:before {
@@ -152,6 +160,12 @@ header {
     min-height: 100px;
     overflow-x: auto;
     padding: 0 30px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.nav-categories .nav-list::-webkit-scrollbar {
+    display: none;
 }
 
 .nav-categories .nav-list .nav-item {
@@ -217,4 +231,50 @@ header {
 /* Helpers */
 .p-none {
     padding: 0;
+}
+
+/* Links */
+.links {
+    display: block;
+}
+
+.links .link-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.links .link-item {
+    display: flex;
+    align-items: space-between;
+}
+
+.links .link-item .icon {
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.links .link-item p {
+    color: #242126;
+    max-width: 60%;
+    font-size: 1rem;
+}
+
+.btn-share {
+    background: transparent;
+    border: 0;
+    padding: 0 15px;
+    outline: 0;
+    margin-left: auto;
+    opacity: .4;
+}
+
+.btn-share:hover,
+.btn-share:focus {
+    opacity: 1;
+}
+
+.btn-share img {
+    width: 18px;
 }
