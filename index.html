@@ -80,7 +80,7 @@
         <div class="container p-none">
             <ul class="nav-list">
                 <li class="nav-item">
-                    <button type="button" class="active" data-category="links-uteis">
+                    <button type="button" class="active btn-reset" data-category="links-uteis">
                         <div class="icon">
                             <img src="images/icons/icon-link.svg" loading="lazy">
                         </div>
@@ -89,7 +89,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <button type="button" data-category="podcasts">
+                    <button type="button" class="btn-reset" data-category="podcasts">
                         <div class="icon">
                             <img src="images/icons/icon-music.svg" loading="lazy">
                         </div>
@@ -98,7 +98,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <button type="button" data-category="videos">
+                    <button type="button" class="btn-reset" data-category="videos">
                         <div class="icon">
                             <img src="images/icons/icon-video.svg" loading="lazy">
                         </div>
@@ -107,7 +107,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <button type="button" data-category="livros">
+                    <button type="button" class="btn-reset" data-category="livros">
                         <div class="icon">
                             <img src="images/icons/icon-book.svg" loading="lazy">
                         </div>
@@ -132,7 +132,7 @@
                         </div>
                         <p>Ultricies Tortor Fermentum Sem</p>
                     </a>
-                    <button class="btn-share">
+                    <button class="btn-share btn-reset">
                         <img src="./images/icons/icon-share.svg" alt="share" loading="lazy">
                     </button>
                 </div>
@@ -143,7 +143,7 @@
                         </div>
                         <p>Ultricies Tortor Fermentum Sem</p>
                     </a>
-                    <button class="btn-share">
+                    <button class="btn-share btn-reset">
                         <img src="./images/icons/icon-share.svg" alt="share" loading="lazy">
                     </button>
                 </div>
@@ -154,7 +154,7 @@
                         </div>
                         <p>Ultricies Tortor Fermentum Sem</p>
                     </a>
-                    <button class="btn-share">
+                    <button class="btn-share btn-reset">
                         <img src="./images/icons/icon-share.svg" alt="share" loading="lazy">
                     </button>
                 </div>
@@ -165,7 +165,7 @@
                         </div>
                         <p>Ultricies Tortor Fermentum Sem</p>
                     </a>
-                    <button class="btn-share">
+                    <button class="btn-share btn-reset">
                         <img src="./images/icons/icon-share.svg" alt="share" loading="lazy">
                     </button>
                 </div>
@@ -176,7 +176,7 @@
                         </div>
                         <p>Ultricies Tortor Fermentum Sem</p>
                     </a>
-                    <button class="btn-share">
+                    <button class="btn-share btn-reset">
                         <img src="./images/icons/icon-share.svg" alt="share" loading="lazy">
                     </button>
                 </div>
@@ -187,7 +187,7 @@
                         </div>
                         <p>Ultricies Tortor Fermentum Sem</p>
                     </a>
-                    <button class="btn-share">
+                    <button class="btn-share btn-reset">
                         <img src="./images/icons/icon-share.svg" alt="share" loading="lazy">
                     </button>
                 </div>
@@ -198,7 +198,7 @@
                         </div>
                         <p>Ultricies Tortor Fermentum Sem</p>
                     </a>
-                    <button class="btn-share">
+                    <button class="btn-share btn-reset">
                         <img src="./images/icons/icon-share.svg" alt="share" loading="lazy">
                     </button>
                 </div>
@@ -209,7 +209,7 @@
                         </div>
                         <p>Ultricies Tortor Fermentum Sem</p>
                     </a>
-                    <button class="btn-share">
+                    <button class="btn-share btn-reset">
                         <img src="./images/icons/icon-share.svg" alt="share" loading="lazy">
                     </button>
                 </div>
@@ -220,12 +220,14 @@
     <!-- Footer with form -->
     <footer>
         <div class="container">
-            <h2>Acompanhe</h2>
-            <form action="">
-                <input type="email" name="email">
-                <button type="submit">
-                    <img src="https://placehold.it/30x30" loading="lazy">
-                </button>
+            <form action="" class="newsletter">
+                <label for="name">Acompanhe por email</label>
+                <div class="content">
+                    <input type="email" name="email" placeholder="seumelhoremail@email.com">
+                    <button type="submit" class="btn-reset">
+                        <img src="./images/icons/icon-send.svg" width="24px" height="24px" loading="lazy" alt="icone enviar">
+                    </button>
+                </div>
             </form>
         </div>
     </footer>
