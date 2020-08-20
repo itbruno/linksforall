@@ -327,7 +327,7 @@ header {
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 /* Links */
@@ -343,7 +343,15 @@ header {
 
 .links .link-item {
     display: flex;
-    align-items: space-between;
+    min-height: 50px;
+    justify-content: space-between;
+    transition: all .3s ease;
+}
+
+.links .link-item.hidden-link {
+    min-height: 0px;
+    height: 0;
+    opacity: 0;
 }
 
 .links .link-item .icon {
