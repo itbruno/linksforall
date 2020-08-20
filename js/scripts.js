@@ -53,6 +53,38 @@ function categoriesNav() {
     });
 }
 
+// Newsletter with getform
+function newsletter() {
+    const form = document.querySelector('#ajaxForm');
+    let formResponse = document.querySelector('.form-response');
+    let loading = document.querySelectorAll('.form-icon');
+    
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        loading.forEach((e) => e.classList.toggle('hide'));
+
+        fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            dataType: 'json',
+            headers: { "Accept": "application/json" }
+        })
+        .then(() => {
+            formResponse.classList.add('is-visible')
+            loading.forEach((e) => e.classList.toggle('hide'));
+
+            setTimeout(() => {
+                formResponse.classList.remove('is-visible')    
+            },3000);
+        })
+        .catch(err => {
+            alert(err.text);
+            loading.forEach((e) => e.classList.toggle('hide'));
+        })
+    })
+}
+
 // Call functions
 categoriesNav();
 toggleNav();
+newsletter();

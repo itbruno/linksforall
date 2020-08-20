@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     background: #FAFEFF;
-    color: #242126;
+    color: #291933;
 }
 
 input,
@@ -361,7 +361,7 @@ header {
 }
 
 .links .link-item p {
-    color: #242126;
+    color: #432556;
     max-width: 60%;
     font-size: 1rem;
 }
@@ -383,7 +383,7 @@ header {
 
 /* Footer */
 footer {
-    margin: 30px 0 60px;
+    margin: 30px 0 30px;
 }
 
 footer label {
@@ -419,6 +419,7 @@ footer label:after {
     border: 0;
     flex: 1;
     outline: 0;
+    color: #291933;
 }
 
 .newsletter button {
@@ -427,6 +428,61 @@ footer label:after {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.form-response {
+    height: 200px;
+    width: 100%;
+    background-color: #495ECA;
+    color: #ffffff;
+    border-radius: 40px 40px 0 0;
+    padding: 40px;
+    position: fixed;
+    bottom: -200px;
+    transition: all .2s ease;
+}
+
+.form-response.is-visible {
+    bottom: 0;
+}
+
+.form-response h3 {
+    color: #DFCD9B;
+    font-weight: 500;
+    margin: 15px 0 5px;
+}
+
+.form-response h2 {
+    color: #ffffff;
+    font-weight: 600;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.form-response .icon {
+    border-radius: 12px;
+    background-color: rgba(255,255,255,.1);
+    width: 50px;
+    height: 50px;
+}
+
+.is-loading {
+    border: 2px solid #ffffff;
+    border-left-color: #495ECA; 
+    border-radius: 100px;
+    width: 24px;
+    height: 24px;
+    display: block;
+    animation: loading .6s infinite linear;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes animaCircles {

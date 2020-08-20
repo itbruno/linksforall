@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"">
     <title>LinksforAll - @codigodesign</title>
     
     <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
@@ -219,17 +219,29 @@
     <!-- Footer with form -->
     <footer>
         <div class="container">
-            <form action="" class="newsletter">
+            <form id="ajaxForm" action="https://getform.io/f/d81196d6-9d17-4366-a721-7c31f836fedb" method="POST" class="newsletter">
                 <label for="name">Acompanhe por email</label>
                 <div class="content">
-                    <input type="email" name="email" placeholder="seumelhoremail@email.com">
+                    <input type="email" name="email" placeholder="seumelhoremail@email.com" required>
                     <button type="submit" class="btn-reset">
-                        <img src="./images/icons/icon-send.svg" width="24px" height="24px" loading="lazy" alt="icone enviar">
+                        <img class="form-icon" src="./images/icons/icon-send.svg" width="24px" height="24px" loading="lazy" alt="icone enviar">
+                        <span class="form-icon is-loading hide"></span>
                     </button>
                 </div>
             </form>
         </div>
     </footer>
+
+    <div class="form-response">
+        <div class="container">
+            <div class="icon">
+                <img src="./images/icons/icon-form-success.svg" width="30px" alt="Email enviado">
+            </div>
+
+            <h3>E-mail cadastrado!</h3>
+            <h2>Obrigado por me acompanhar 😊</h2>
+        </div>
+    </div>
 
     <!-- scripts -->
     <script src="./js/scripts.js" async></script>
