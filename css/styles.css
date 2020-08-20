@@ -55,12 +55,12 @@ label {
 
 .offset-nav-content {
     position: fixed;
-    height: 100vh;
+    height: 100%;
     width: 90px;
     background-color: #ffffff;
     right: -90px;
     z-index: 100;
-    transition: all .3s ease;
+    transition: all .25s ease;
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -98,7 +98,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all .3s ease;
+    transition: all .25s ease;
 }
 
 .offset-nav .btn-offset-nav:before,
@@ -119,6 +119,10 @@ label {
     bottom: -19px;
     right: 0;
     transform: rotate(180deg) scaleX(-1);
+}
+
+.nav-opened {
+    overflow: hidden;
 }
 
 .nav-opened .offset-nav-content {
