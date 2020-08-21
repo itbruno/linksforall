@@ -88,14 +88,10 @@ function newsletter() {
 function shareLink() {
     let btnShare = document.querySelectorAll('.js-btn-share');
     
-    if(navigator.canShare) {
-        btnShare.forEach((e) => e.classList.remove('hide'));
-    }
-
     btnShare.forEach((e) => {
         let getUrl = e.parentNode.querySelector('a').href;
-        console.log(getUrl);
-
+        e.classList.remove('hide');
+        
         e.addEventListener('click', function(){
             navigator.share({
               url: getUrl,
@@ -107,7 +103,7 @@ function shareLink() {
 }
 
 // Call functions
-shareLink();
 categoriesNav();
 toggleNav();
 newsletter();
+if (typeof window.orientation !== 'undefined') { shareLink() }
