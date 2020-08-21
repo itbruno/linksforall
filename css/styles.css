@@ -426,6 +426,7 @@ footer label:after {
 }
 
 .newsletter input {
+    font-size: 16px;
     height: 45px;
     padding: 20px;
     border-radius: 12px;

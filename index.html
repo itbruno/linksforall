@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LinksforAll - @codigodesign</title>
+    <meta name="description" content="Agregador de links para compartilhamento em redes sociais.">
     
     <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="preload" as="style">
@@ -75,13 +76,13 @@
     </header>
 
     <!-- Categories nav -->
-    <nav role="nav" class="nav-categories">
+    <nav role="navigation" class="nav-categories">
         <div class="container p-none">
             <ul class="nav-list">
                 <li class="nav-item">
                     <button type="button" class="js-category-button active btn-reset" data-label="Todos os links" data-category="links-uteis">
                         <div class="icon">
-                            <img src="images/icons/icon-link.svg" loading="lazy">
+                            <img src="images/icons/icon-link.svg" alt="link icon" loading="lazy">
                         </div>
                         <span>Todos</span>
                     </button>
@@ -90,7 +91,7 @@
                 <li class="nav-item">
                     <button type="button" class="js-category-button btn-reset" data-label="Podcasts"  data-category="podcasts">
                         <div class="icon">
-                            <img src="images/icons/icon-music.svg" loading="lazy">
+                            <img src="images/icons/icon-music.svg" lalt="music icon" oading="lazy">
                         </div>
                         <span>Podcasts</span>
                     </button>
@@ -99,7 +100,7 @@
                 <li class="nav-item">
                     <button type="button" class="js-category-button btn-reset" data-label="Videos"  data-category="videos">
                         <div class="icon">
-                            <img src="images/icons/icon-video.svg" loading="lazy">
+                            <img src="images/icons/icon-video.svg" alt="video icon" loading="lazy">
                         </div>
                         <span>Videos</span>
                     </button>
@@ -108,7 +109,7 @@
                 <li class="nav-item">
                     <button type="button" class="js-category-button btn-reset" data-label="Livros"  data-category="livros">
                         <div class="icon">
-                            <img src="images/icons/icon-book.svg" loading="lazy">
+                            <img src="images/icons/icon-book.svg" alt="book icon" loading="lazy">
                         </div>
                         <span>Livros</span>
                     </button>
@@ -220,9 +221,9 @@
     <footer>
         <div class="container">
             <form id="ajaxForm" action="https://getform.io/f/d81196d6-9d17-4366-a721-7c31f836fedb" method="POST" class="newsletter">
-                <label for="name">Acompanhe por email</label>
+                <label for="email">Acompanhe por email</label>
                 <div class="content">
-                    <input type="email" name="email" placeholder="seumelhoremail@email.com" required>
+                    <input type="email" name="email" placeholder="seunome@email.com" required>
                     <button type="submit" class="btn-reset">
                         <img class="form-icon" src="./images/icons/icon-send.svg" width="24px" height="24px" loading="lazy" alt="icone enviar">
                         <span class="form-icon is-loading hide"></span>
