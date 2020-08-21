@@ -84,7 +84,30 @@ function newsletter() {
     })
 }
 
+// Event to call native share method from browser
+function shareLink() {
+    let btnShare = document.querySelectorAll('.js-btn-share');
+    
+    if(navigator.canShare) {
+        btnShare.forEach((e) => e.classList.remove('hide'));
+    }
+
+    btnShare.forEach((e) => {
+        let getUrl = e.parentNode.querySelector('a').href;
+        console.log(getUrl);
+
+        e.addEventListener('click', function(){
+            navigator.share({
+              url: getUrl,
+            })
+            .then(() => console.log('Link shared'))
+            .catch((error) => console.log('Error sharing', error));
+        });
+    })
+}
+
 // Call functions
+shareLink();
 categoriesNav();
 toggleNav();
 newsletter();

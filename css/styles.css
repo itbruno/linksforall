@@ -321,6 +321,7 @@ header {
 }
 
 .btn-reset {
+    cursor: pointer;
     background-color: transparent;
     border: 0;
     outline: 0;
@@ -339,31 +340,42 @@ header {
     display: flex;
     align-items: center;
     text-decoration: none;
+    flex: 1;
 }
 
 .links .link-item {
     display: flex;
-    min-height: 50px;
     justify-content: space-between;
     transition: all .3s ease;
+    padding: 15px 0;
 }
 
 .links .link-item.hidden-link {
-    min-height: 0px;
     height: 0;
     opacity: 0;
+    padding: 0;
+    transition: all .3s ease;
 }
 
 .links .link-item .icon {
-    margin-right: 20px;
+    margin-right: 15px;
     width: 40px;
     height: 40px;
 }
 
 .links .link-item p {
     color: #432556;
-    max-width: 60%;
+    max-width: 80%;
     font-size: 1rem;
+    line-height: 1.5em;
+    margin: 0;
+    transition: all .3s ease;
+}
+
+.links .link-item:hover {
+    box-shadow: 0 0 30px rgba(0,0,0,.1);
+    border-radius: 10px;
+    padding-left: 15px;
 }
 
 .btn-share {
@@ -436,9 +448,10 @@ footer label:after {
     background-color: #495ECA;
     color: #ffffff;
     border-radius: 40px 40px 0 0;
-    padding: 40px;
+    padding: 40px 0;
     position: fixed;
     bottom: -200px;
+    text-align: center;
     transition: all .2s ease;
 }
 
@@ -456,7 +469,6 @@ footer label:after {
     color: #ffffff;
     font-weight: 600;
     margin: 0;
-    white-space: nowrap;
 }
 
 .form-response .icon {
@@ -464,6 +476,7 @@ footer label:after {
     background-color: rgba(255,255,255,.1);
     width: 50px;
     height: 50px;
+    margin: auto
 }
 
 .is-loading {
