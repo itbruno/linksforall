@@ -2,15 +2,15 @@
 // Navigation buttons show in header
 const categories = [
     {
-        title: 'Projetos',
-        icon: 'projects',
-        category_id: 'projects'
-    },
-    
-    {
         title: 'Artigos',
         icon: 'editor',
         category_id: 'articles'
+    },
+    
+    {
+        title: 'Projetos',
+        icon: 'projects',
+        category_id: 'projects'
     },
     
     {
