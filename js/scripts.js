@@ -110,7 +110,7 @@ function outputLink(title, category_id, link, icon) {
         <div class="js-category-link link-item" data-link="${category_id}">
             <a href="${link}" target="_blank" rel="noopener">
                 <div class="icon">
-                    <img src="./images/icons/icon-${icon}.svg" alt="icon-name" loading="lazy">
+                    <img src="./images/icons/icon-${icon ? icon : 'link'}.svg" alt="icon-name" loading="lazy">
                 </div>
                 <p>${title}</p>
             </a>
@@ -128,11 +128,10 @@ function outputLink(title, category_id, link, icon) {
 function outputCategory(title, icon, category_id) {
     var el = document.createElement('li');
     el.classList.add('nav-item');
-
     const output = `
         <button type="button" class="js-category-button btn-reset" data-label="${title}" data-category="${category_id}">
             <div class="icon">
-                <img src="images/icons/icon-${icon}.svg" alt="link icon" loading="lazy">
+                <img src="images/icons/icon-${icon ? icon : 'link'}.svg" alt="link icon" loading="lazy">
             </div>
             <span>${title}</span>
         </button>

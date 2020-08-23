@@ -82,7 +82,14 @@ label {
 }
 
 .offset-nav-links li {
-    padding: 10px 0;
+    padding: 8px 0;
+    opacity: .9;
+    transition: all .3s ease;
+}
+
+.offset-nav-links li:hover {
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 .offset-nav .btn-offset-nav {
