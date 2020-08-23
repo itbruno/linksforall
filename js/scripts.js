@@ -102,7 +102,59 @@ function shareLink() {
     })
 }
 
-// Call functions
+
+// Function to create links dynamically
+function outputLink(title, category_id, link, icon) {
+    var el = document.createElement('div');
+    const output = `
+        <div class="js-category-link link-item" data-link="${category_id}">
+            <a href="${link}" target="_blank" rel="noopener">
+                <div class="icon">
+                    <img src="./images/icons/icon-${icon}.svg" alt="icon-name" loading="lazy">
+                </div>
+                <p>${title}</p>
+            </a>
+            <button class="js-btn-share btn-share btn-reset hide">
+                <img src="./images/icons/icon-share.svg" alt="share" loading="lazy">
+            </button>
+        </div>
+    `;
+
+    el.innerHTML += output;
+    return el;
+}
+
+// Function to create categories dynamically
+function outputCategory(title, icon, category_id) {
+    var el = document.createElement('li');
+    el.classList.add('nav-item');
+
+    const output = `
+        <button type="button" class="js-category-button btn-reset" data-label="${title}" data-category="${category_id}">
+            <div class="icon">
+                <img src="images/icons/icon-${icon}.svg" alt="link icon" loading="lazy">
+            </div>
+            <span>${title}</span>
+        </button>
+    `;
+
+    el.innerHTML += output;
+    return el;
+}
+
+// Function to add links and categories to DOM
+function generateContent() {
+    links.forEach((e) => {
+        document.querySelector('#links').append(outputLink(e.title, e.category_id, e.link, e.icon));
+    });
+
+    categories.forEach((e) => {
+        document.querySelector('#categories').append(outputCategory(e.title, e.icon, e.category_id));
+    });
+}
+
+// Call main functions
+generateContent();
 categoriesNav();
 toggleNav();
 newsletter();
