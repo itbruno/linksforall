@@ -20,5 +20,11 @@ As imagens estão na pasta `/images`, nela contêm os ícones e todas as imagens
 Para ver o passo a passo de como atualizar o conteúdo, basta acessar o link abaixo da Wiki:
 ### https://github.com/itbruno/linksforall/wiki
 
+## Formulário de email
+Para facilitar a configuração do formulário utilizei o [Getform.io](https://getform.io), você pode se cadastrar e criar um novo formulário para gerar uma url como a que estão no projeto. Daí é só alterar:
+```html
+<form id="ajaxForm" action="URL_GERADA_PELO_GETFORM" method="POST" 
+```
+
 ## Próximos passos
 Esse projeto vai evoluir, então, possivelmente em breve quero criar uma versão mais dinâmica e componentizada com **ReactJS** ou alguma outra lib com um backend(_nodeJS talvez_) para a criação de links e categorias de forma dinâmica. Aceito sugestões 😊
