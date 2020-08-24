@@ -12,7 +12,7 @@ const categories = [
         icon: 'projects',
         category_id: 'projects'
     },
-    
+
     {
         title: 'Videos',
         icon: 'video',
@@ -31,9 +31,9 @@ const categories = [
 // Links available
 const links = [
     {
-        title: 'tinu.be - encurtador de url open-source',
+        title: 'Repositório com o código do projeto Linksforall',
         category_id: 'projects',
-        link: 'https://tinu.be',
+        link: 'https://tinu.be/linksforall',
         icon: 'projects',
     },
     
@@ -45,9 +45,16 @@ const links = [
     },
 
     {
-        title: 'Repositório com o código do projeto Linksforall',
+        title: 'Paper to code, processo de um projeto do papel ao código no @codigodesign',
+        category_id: 'videos',
+        link: 'https://tinu.be/papertocode01',
+        icon: 'video'
+    },
+
+    {
+        title: 'tinu.be - encurtador de url open-source',
         category_id: 'projects',
-        link: 'https://tinu.be/linksforall',
+        link: 'https://tinu.be',
         icon: 'projects',
     },
 
@@ -91,13 +98,6 @@ const links = [
         category_id: 'podcasts',
         link: 'https://tinu.be/podcre',
         icon: 'mic',
-    },
-
-    {
-        title: 'Paper to code, processo de um projeto do papel ao código no @codigodesign',
-        category_id: 'videos',
-        link: 'https://tinu.be/papertocode01',
-        icon: 'video'
     },
 
     {

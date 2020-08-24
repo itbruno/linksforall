@@ -106,18 +106,20 @@ function shareLink() {
 // Function to create links dynamically
 function outputLink(title, category_id, link, icon) {
     var el = document.createElement('div');
+
+    el.classList.add('js-category-link', 'link-item');
+    el.dataset.link = category_id;
+
     const output = `
-        <div class="js-category-link link-item" data-link="${category_id}">
-            <a href="${link}" target="_blank" rel="noopener">
-                <div class="icon">
-                    <img src="./images/icons/icon-${icon ? icon : 'link'}.svg" alt="icon-name" loading="lazy">
-                </div>
-                <p>${title}</p>
-            </a>
-            <button class="js-btn-share btn-share btn-reset hide">
-                <img src="./images/icons/icon-share.svg" alt="share" loading="lazy">
-            </button>
-        </div>
+        <a href="${link}" target="_blank" rel="noopener">
+            <div class="icon">
+                <img src="./images/icons/icon-${icon ? icon : 'link'}.svg" alt="icon-name" loading="lazy">
+            </div>
+            <p>${title}</p>
+        </a>
+        <button class="js-btn-share btn-share btn-reset hide">
+            <img src="./images/icons/icon-share.svg" alt="share" loading="lazy">
+        </button>
     `;
 
     el.innerHTML += output;
