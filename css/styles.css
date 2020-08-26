@@ -426,7 +426,7 @@ footer label:after {
 }
 
 .newsletter .content {
-    border-radius: 12px;
+    border-radius: 15px;
     background-color: #495ECA;
     display: flex;
     align-items: center;
@@ -440,6 +440,7 @@ footer label:after {
     border-radius: 12px;
     border: 0;
     flex: 1;
+    min-width: 85%;
     outline: 0;
     color: #291933;
 }
