@@ -110,14 +110,14 @@ const links = [
     {
         title: 'A história por trás da landing page de planos da Nuvemshop',
         category_id: 'articles',
-        link: 'hhttps://tinu.be/plansnuvem',
+        link: 'https://tinu.be/plansnuvem',
         icon: 'editor'
     },
 
     {
         title: '[ES] La historia detrás de la landing page de planes y precios de Tiendanube',
         category_id: 'articles',
-        link: 'hhttps://tinu.be/planstiendanube',
+        link: 'https://tinu.be/planstiendanube',
         icon: 'editor'
     }
 ];
