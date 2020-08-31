@@ -45,6 +45,13 @@ const links = [
     },
 
     {
+        title: 'Dicas e aprendizados para otimiza o CSS e melhora performance',
+        category_id: 'article',
+        link: 'https://tinu.be/cssperf',
+        icon: 'editor'
+    },
+    
+    {
         title: 'Paper to code, processo de um projeto do papel ao código no @codigodesign',
         category_id: 'videos',
         link: 'https://tinu.be/papertocode01',
