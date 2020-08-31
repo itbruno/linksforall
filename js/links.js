@@ -45,7 +45,7 @@ const links = [
     },
 
     {
-        title: 'Dicas e aprendizados para otimiza o CSS e melhora performance',
+        title: 'Dicas e aprendizados para otimizar o CSS e melhorar a performance',
         category_id: 'article',
         link: 'https://tinu.be/cssperf',
         icon: 'editor'
