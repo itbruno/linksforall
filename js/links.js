@@ -45,7 +45,7 @@ const links = [
     },
 
     {
-        title: 'Dicas e aprendizados para otimizar o CSS e melhorar a performance',
+        title: 'Notion com dicas de performance web/mobile',
         category_id: 'article',
         link: 'https://tinu.be/cssperf',
         icon: 'editor'
