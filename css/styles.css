@@ -24,7 +24,7 @@ button {
 }
 
 input::placeholder {
-    color: #97A1D7;
+    color: #635D67;
     font-style: italic;
 }
 
@@ -38,7 +38,7 @@ ul {
 h2,
 label {
     font-size: 1.2rem;
-    color: #495ECA;
+    color: #242126;
     display: block;
     font-weight: 600;
     margin: 10px 0 20px;
@@ -73,7 +73,7 @@ label {
 
 .offset-nav-content h2 span {
     display: block;
-    color: #97A1D7;
+    color: #635D67;
 }
 
 .offset-nav-links {
@@ -85,6 +85,10 @@ label {
     padding: 8px 0;
     opacity: .9;
     transition: all .3s ease;
+}
+
+.offset-nav-links a {
+    color: #635D67;
 }
 
 .offset-nav-links li:hover {
@@ -143,36 +147,14 @@ label {
 
 /* Header */
 header {
-    background-color: #495ECA;
+    background: #242126 url('../images/header-bg.jpg') no-repeat center center;
+    background-size: cover;
     color: #ffffff;
     padding: 60px 0;
     align-items: center;
     position: relative;
     overflow: hidden;
     min-height: 250px;
-}
-
-/* Header circles */
-.circle {
-    position: absolute;
-    width: 400px;
-    height: 250px;
-    transform: rotate(-30deg);
-    border-radius: 100%;
-}
-
-.circle-blue {
-    left: -50px;
-    top: -100px;
-    background: #556BDA;
-    animation: animaCircles 1.3s ease forwards;
-}
-
-.circle-orange {
-    right: -180px;
-    bottom: -130px;
-    background: #FFA45A;
-    animation: animaCircles 1.3s ease forwards;
 }
 
 /* Header - User info */
@@ -210,7 +192,7 @@ header {
 
 .user-info-content a {
     color: #ffffff;
-    opacity: .4;
+    opacity: .6;
     text-decoration: none;
     transition: opacity .3s ease; 
 }
@@ -230,7 +212,7 @@ header {
     margin-right: 5px;
     font-size: .9rem;
     padding: 3px 5px;
-    border: 1px solid #97A1D7;
+    border: 1px solid #635D67;
     border-radius: 5px;
 }
 
@@ -277,7 +259,7 @@ header {
     border-radius: 30px;
     left: 20%;
     bottom: -1.5px;
-    background: #FFA45A;
+    background: #DFCD9B;
     transition: width .3s ease;
 }   
 
@@ -301,7 +283,7 @@ header {
     align-items: center;
     padding: 10px 15px;
     box-shadow: 0px 15px 30px rgba(25, 31, 61, 0.1);
-    color: #495ECA;
+    color: #242126;
     font-size: 1rem;
     font-weight: 600;
     transition: all .3s ease;
@@ -371,7 +353,7 @@ header {
 }
 
 .links .link-item p {
-    color: #432556;
+    color: #635D67;
     max-width: 80%;
     font-size: 1rem;
     line-height: 1.5em;
@@ -417,7 +399,7 @@ footer label {
 footer label:after {
     content: '';
     height: 1px;
-    background-color: #495ECA;
+    background-color: #242126;
     opacity: .1;
     width: 100%;
     display: block;
@@ -427,8 +409,8 @@ footer label:after {
 }
 
 .newsletter .content {
-    border-radius: 15px;
-    background-color: #495ECA;
+    border-radius: 12px;
+    background-color: #242126;
     display: flex;
     align-items: center;
     padding: 3px;
@@ -457,7 +439,7 @@ footer label:after {
 .form-response {
     height: 200px;
     width: 100%;
-    background-color: #495ECA;
+    background: linear-gradient(118.42deg, #242126 16.26%, #635D67 91.49%);;
     color: #ffffff;
     border-radius: 40px 40px 0 0;
     padding: 40px 0;
@@ -493,7 +475,7 @@ footer label:after {
 
 .is-loading {
     border: 2px solid #ffffff;
-    border-left-color: #495ECA; 
+    border-left-color: #242126; 
     border-radius: 100px;
     width: 24px;
     height: 24px;
