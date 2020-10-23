@@ -17,14 +17,7 @@ const categories = [
         title: 'Videos',
         icon: 'video',
         category_id: 'videos'
-    },
-
-    {
-        title: 'Podcasts',
-        icon: 'mic',
-        category_id: 'podcasts'
-    },
-
+    }
 ];
 
 // Links
@@ -63,48 +56,6 @@ const links = [
         category_id: 'projects',
         link: 'https://tinu.be',
         icon: 'projects',
-    },
-
-    {
-        title: 'Hipsters.tech',
-        category_id: 'podcasts',
-        link: 'https://tinu.be/hipsterstech',
-        icon: 'mic',
-    },
-    
-    {
-        title: 'FalaDev',
-        category_id: 'podcasts',
-        link: 'https://tinu.be/faladev',
-        icon: 'mic',
-    },
-    
-    {
-        title: 'Papo de UX',
-        category_id: 'podcasts',
-        link: 'https://tinu.be/papodeux',
-        icon: 'mic',
-    },
-    
-    {
-        title: 'JTBD+',
-        category_id: 'podcasts',
-        link: 'https://tinu.be/jtbdpdc',
-        icon: 'mic',
-    },
-
-    {
-        title: 'DevCast',
-        category_id: 'podcasts',
-        link: 'https://tinu.be/devcast',
-        icon: 'mic',
-    },
-
-    {
-        title: 'PodCrê',
-        category_id: 'podcasts',
-        link: 'https://tinu.be/podcre',
-        icon: 'mic',
     },
 
     {
