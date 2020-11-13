@@ -1,0 +1,103 @@
+/* Header */
+header {
+    background-color: #495ECA;
+    color: #ffffff;
+    padding: 60px 0;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 250px;
+}
+
+/* Header circles */
+.circle {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    transform: rotate(-30deg);
+    border-radius: 100%;
+    animation: animaCircles 1.3s ease forwards;
+
+    &.circle-blue {
+        left: -50px;
+        top: -100px;
+        background: #556BDA;
+        
+    }
+
+    &.circle-orange {
+        right: -180px;
+        bottom: -130px;
+        background: #FFA45A;
+    }
+}
+
+/* Header - User info */
+.user-info {
+    display: flex;
+    align-items: center;
+
+    &-content {
+        margin-left: 15px;
+
+        h1, p {
+            margin: 0 0 5px;
+        }
+
+        h1 {
+            font-size: 1.2rem;
+        }
+
+        a {
+            color: #ffffff;
+            opacity: .4;
+            text-decoration: none;
+            transition: opacity .3s ease;
+
+            &:hover,
+            &:focus,
+            &:active {
+                opacity: 1;
+            }
+        }
+    }
+
+    &-image {
+        border: 1px solid #fff;
+        padding: 4px;
+        border-radius: 100px;
+        width: 70px;
+        height: 70px;
+    }
+
+    &-image img {
+        overflow: hidden;
+        border-radius: 100px;
+        max-width: 100%;
+    }
+    
+    &-labels {
+        margin-top: 15px;
+
+        li {
+            display: inline-block;
+            margin-right: 5px;
+            font-size: .9rem;
+            padding: 3px 5px;
+            border: 1px solid #97A1D7;
+            border-radius: 5px;
+        }        
+    }
+}
+
+@keyframes animaCircles {
+    from {
+        width: 0;
+        height: 0;
+    }
+
+    to {
+        height: 250px;
+        width: 400px;
+    }
+}
