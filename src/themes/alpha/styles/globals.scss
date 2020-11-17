@@ -1,4 +1,5 @@
 @import './variables';
+@import './categories';
 
 * {
     box-sizing: border-box;
@@ -15,7 +16,7 @@ body {
     font-weight: 500;
     margin: 0;
     padding: 0;
-    background: #FAFEFF;
+    background: $body-bg;
     color: $base-color;
 }
 
@@ -53,4 +54,10 @@ label {
     padding: 0 30px;
     position: relative;
     flex-direction: column;
+}
+
+.btn-reset {
+    cursor: pointer;
+    border: 0;
+    outline: 0;
 }
