@@ -36,10 +36,11 @@ header {
 .user-info {
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
 
     &-content {
-        margin-left: 15px;
-
         h1, p {
             margin: 0 0 5px;
         }
@@ -66,27 +67,15 @@ header {
         border: 1px solid #fff;
         padding: 4px;
         border-radius: 100px;
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 15px;
     }
 
     &-image img {
         overflow: hidden;
         border-radius: 100px;
         max-width: 100%;
-    }
-    
-    &-labels {
-        margin-top: 15px;
-
-        li {
-            display: inline-block;
-            margin-right: 5px;
-            font-size: .9rem;
-            padding: 3px 5px;
-            border: 1px solid #97A1D7;
-            border-radius: 5px;
-        }        
     }
 }
 

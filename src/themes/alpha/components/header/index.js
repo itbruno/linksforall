@@ -9,18 +9,13 @@ function Header(props) {
                 <div className="container">
                     <div className="user-info">
                         <div className="user-info-image">
-                            <img src="https://itbruno.github.io/linksforall/images/user-image.jpg" alt="Bruno Rodrigues" width="60" height="60" loading="lazy" />
+                            <img src="https://itbruno.github.io/linksforall/images/user-image.jpg" alt="Bruno Rodrigues" width="70" height="70" loading="lazy" />
                         </div>
 
                         <div className="user-info-content">
                             <h1>Bruno Rodrigues</h1>
                             {props.username}
                             <a href="https://itbruno.com.br" rel="noreferrer noopener" target="_blank">itbruno.com.br</a>
-
-                            <ul className="user-info-labels">
-                                <li>designer</li>
-                                <li>front-end</li>
-                            </ul>
                         </div>
                     </div>
                 </div>

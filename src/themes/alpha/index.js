@@ -12,15 +12,14 @@ import './styles/globals.scss';
 function Home() {
     return (
         <>
-        <GoogleFontLoader 
-            fonts={[
-                {
-                    font: 'Montserrat',
-                    weights: [500, 600]
-                }
-            ]}
-        />
-        
+            <GoogleFontLoader 
+                fonts={[
+                    {
+                        font: 'Montserrat',
+                        weights: [500, 600]
+                    }
+                ]}
+            />
             <Header />
         </>
     )
