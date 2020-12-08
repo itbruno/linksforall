@@ -8,6 +8,10 @@
     transition: all .3s ease;
     padding: 15px 0;
 
+    .link-item-icon {
+        color: $primary-color;
+    }
+
     .link-item-label {
         color: $dark-blue;
         max-width: 80%;
