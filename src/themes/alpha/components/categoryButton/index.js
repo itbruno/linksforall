@@ -1,9 +1,8 @@
+import Icon from '../icon';
 import './category-button.scss';
-import * as icon from "react-icons/fi";
 
 function CategoryButton(props) {
     // Get icon value to create dynamic component
-    const GetIcon = icon[props.icon];
     const isActive = props.active ? 'active' : '';
     const buttonClass = 'js-category-button';
 
@@ -24,8 +23,8 @@ function CategoryButton(props) {
     
     return (
         <>
-            <button onClick={(e) => handleActive(e)} className={`${isActive} ${buttonClass} button-category btn-reset`} data-category={props.id}>
-                <div className="button-category-icon"><GetIcon /></div>
+            <button onClick={handleActive} className={`${isActive} ${buttonClass} button-category btn-reset`} data-category={props.id}>
+                <div className="button-category-icon icon"><Icon name={props.icon} /></div>
                 <div className="button-category-label">{props.label}</div>
             </button>
         </>

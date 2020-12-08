@@ -1,0 +1,35 @@
+@import '../../styles/variables.scss';
+
+.link-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    flex: 1;
+    transition: all .3s ease;
+    padding: 15px 0;
+
+    .link-item-label {
+        color: $dark-blue;
+        max-width: 80%;
+        font-size: 1rem;
+        line-height: 1.5em;
+        margin: 0;
+        transition: all .3s ease;
+    }
+
+    &.hidden-link {
+        height: 0;
+        opacity: 0;
+        padding: 0;
+        visibility: hidden;
+    }
+
+    &:hover {
+        box-shadow: 0 0 30px rgba($dark-blue,.05);
+        border-radius: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}

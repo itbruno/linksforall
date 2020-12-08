@@ -5,12 +5,14 @@ import GoogleFontLoader from 'react-google-font-loader';
 // Components
 import Header from './components/header';
 import CategoryButton from './components/categoryButton';
+import LinkItem from './components/linkItem';
 
 // Styles
 import './styles/globals.scss';
 
 // Main
 function Home() {
+    
     return (
         <>
             {/* Load Google Font */}
@@ -38,6 +40,23 @@ function Home() {
                     </div>
                 </div>
             </nav>
+
+            {/* Category title */}
+            <div className="container">
+                <h2>Links</h2>
+
+                <div id="links">
+                    <LinkItem 
+                        url="https://google.com"
+                        label="Repositório com o código do projeto Linksforall" 
+                    />
+
+                    <LinkItem 
+                        url="https://google.com"
+                        label="Repositório com o código do projeto Linksforall" 
+                    />
+                </div>
+            </div>
         </>
     )
 }
