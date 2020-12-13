@@ -1,17 +1,35 @@
+import { useParams } from 'react-router-dom';
 import { useState, React, useEffect } from 'react';
+
+// Services
+import api from '../../../services/api';
+
+// Components
 import CategoryButton from '../categoryButton';
 import LinkItem from '../linkItem';
 
 function ListingItems() {
-    // Get icon value to create dynamic component
+    const { userId } = useParams();
+    
+    const [links, setLinks] = useState();
+    const [categories, setCategories] = useState();
+    const [activeCategory, setActiveCategory] = useState();
+    
     const categoryClass = 'js-category-button';
     const linkItemClass = 'js-link-item';
-    const [activeCategory, setActiveCategory] = useState();
+    
 
     useEffect(() => {
-        const getFirstCategoryName = document.querySelector(`.${categoryClass}`);
-        setActiveCategory(getFirstCategoryName.innerText);
-    }, [])
+        apiResponse();
+    })
+
+    async function apiResponse() {
+        const res = await api.get(userId);
+        setLinks(res.data.links);
+        setCategories(res.data.categories);
+
+        setActiveCategory(res.data.categories[0].label);
+    }
 
     // Add active class to button
     function handleActive(el) {
@@ -45,52 +63,30 @@ function ListingItems() {
             {/* Nav with categories */}
             <nav className="nav-categories">
                 <div id="categories" className="nav-list">
-                    <li className="nav-item">
-                        <CategoryButton
-                            handleEvent={handleActive} 
-                            label="Todos"
-                            icon="FiLink"
-                            id="all"
-                            classes="active"
-                            categoryId="all"
-                        />
-                    </li>
-
-                    <li className="nav-item">
-                        <CategoryButton
-                            handleEvent={handleActive}
-                            label="Projects"
-                            icon="FiLayers"
-                            id="projects"
-                            categoryId="projects"
-                        />
-                    </li>
-
-                    <li className="nav-item">
-                        <CategoryButton
-                            handleEvent={handleActive}
-                            label="Articles"
-                            icon="FiEdit"
-                            id="articles"
-                            categoryId="articles"
-                        />
-                    </li>
+                { categories && categories.map((category, index) => (
+                        <li className="nav-item" key={category.id}>
+                            <CategoryButton
+                                handleEvent={handleActive} 
+                                label={category.label}
+                                icon={category.icon}
+                                categoryId={category.id}
+                                classes={index === 0 ? 'active' : ''}
+                            />
+                        </li>
+                    ))}
                 </div>
             </nav>
             
             <div id="links">
                 <h2>{activeCategory}</h2>
-                <LinkItem 
-                    url="https://google.com"
-                    label="Links para projeto"
-                    category="projects"
-                />
-
-                <LinkItem 
-                    url="https://google.com"
-                    label="Link de artigo" 
-                    category="articles"
-                />
+                { links && links.map((link) => (
+                    <LinkItem 
+                        key={link.label}
+                        url={link.url}
+                        label={link.label}
+                        category={link.categoryId}
+                    />
+                ))}
             </div>
         </>
     )

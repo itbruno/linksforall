@@ -4,7 +4,7 @@ import Home from './themes/alpha';
 function Routes() {
     return(
         <BrowserRouter>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/:userId" component={Home} />
         </BrowserRouter>
     )
 }
