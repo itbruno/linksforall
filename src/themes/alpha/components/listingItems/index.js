@@ -23,7 +23,7 @@ function ListingItems() {
         clearAllActiveItems(linkItemClass);
 
         document.querySelectorAll(`.${linkItemClass}`).forEach((e) => {
-            if (e.dataset.category == getCategoryId || getCategoryId == 'all') {
+            if (e.dataset.category === getCategoryId || getCategoryId === 'all') {
                 e.classList.add('active');
             }
         });
