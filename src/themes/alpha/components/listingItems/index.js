@@ -15,17 +15,27 @@ function ListingItems() {
 
     // Add active class to button
     function handleActive(el) {
-        clearAllActiveButtons();
+        const getCategoryId = el.currentTarget.dataset.category;
         setActiveCategory(el.currentTarget.innerText);
-        
+
+        // Clear all Categories and Links with '.active' class
+        clearAllActiveItems(categoryClass);
+        clearAllActiveItems(linkItemClass);
+
+        document.querySelectorAll(`.${linkItemClass}`).forEach((e) => {
+            if (e.dataset.category == getCategoryId || getCategoryId == 'all') {
+                e.classList.add('active');
+            }
+        });
+
         el.currentTarget.classList.add('active');
     }
 
     // Remove all active class from buttons
-    function clearAllActiveButtons() {
-        const allButtons = document.querySelectorAll(`.${categoryClass}`);
+    function clearAllActiveItems(el) {
+        const activeItems = document.querySelectorAll(`.${el}`);
 
-        allButtons.forEach((e) => {
+        activeItems.forEach((e) => {
             e.classList.remove('active');
         });
     }
@@ -72,13 +82,13 @@ function ListingItems() {
                 <h2>{activeCategory}</h2>
                 <LinkItem 
                     url="https://google.com"
-                    label="Repositório com o código do projeto Linksforall"
+                    label="Links para projeto"
                     category="projects"
                 />
 
                 <LinkItem 
                     url="https://google.com"
-                    label="Repositório com o código do projeto Linksforall" 
+                    label="Link de artigo" 
                     category="articles"
                 />
             </div>
