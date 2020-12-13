@@ -3,7 +3,7 @@ import './link-item.scss';
 
 function LinkItem(props) {
     return (
-        <a href={props.url} className="link-item" target="_blank" rel="noopener noreferrer">
+        <a href={props.url} className="js-lint-item link-item" data-category={props.category} target="_blank" rel="noopener noreferrer">
             <div className="link-item-icon">
                 <span className="icon icon-md"><Icon name={props.icon ? props.icon : 'FiLink'}/></span>
             </div>
