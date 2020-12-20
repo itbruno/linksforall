@@ -1,8 +1,6 @@
-import { useParams } from 'react-router-dom';
-import { useState, React, useEffect } from 'react';
+import { useState, React } from 'react';
 
 // Services
-import api from '../../../services/api';
 import Mock from '../../../services/api/mock';
 
 // Components
@@ -10,24 +8,13 @@ import CategoryButton from '../categoryButton';
 import LinkItem from '../linkItem';
 
 function ListingItems() {
-    const { userId } = useParams();
     
-    const [links, setLinks] = useState(Mock.links);
-    const [categories, setCategories] = useState(Mock.categories);
+    const links = Mock.links;
+    const categories = Mock.categories;
     const [activeCategory, setActiveCategory] = useState(Mock.categories[0].label);
     
     const categoryClass = 'js-category-button';
     const linkItemClass = 'js-link-item';
-    
-
-    // Get Data from API
-    async function apiResponse() {
-        const res = await api.get(userId);
-        setLinks(res.data.links);
-        setCategories(res.data.categories);
-
-        setActiveCategory(res.data.categories[0].label);
-    }
 
     // Add active class to button
     function handleActive(el) {
