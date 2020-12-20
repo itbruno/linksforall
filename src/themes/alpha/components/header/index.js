@@ -13,9 +13,8 @@ function Header(props) {
                         </div>
 
                         <div className="user-info-content">
-                            <h1>Bruno Rodrigues</h1>
-                            {props.username}
-                            <a href="https://itbruno.com.br" rel="noreferrer noopener" target="_blank">itbruno.com.br</a>
+                            <h1>{props.name}</h1>
+                            <a href={`${props.website}`} rel="noreferrer noopener" target="_blank">{props.website.replace(/^(https?|ftp):\/\//, '')}</a>
                         </div>
                     </div>
                 </div>

@@ -6,6 +6,9 @@ import GoogleFontLoader from 'react-google-font-loader';
 import Header from './components/header';
 import ListingItems from './components/listingItems';
 
+// Services
+import Mock from '../services/api/mock';
+
 // Styles
 import './styles/globals.scss';
 
@@ -18,7 +21,10 @@ function Home() {
             <GoogleFontLoader fonts={[{ font: 'Montserrat', weights: [500, 600] }]} />
             
             {/* Header */}
-            <Header />
+            <Header 
+                name={Mock.user.fullname}
+                website={Mock.user.website}
+            />
             <div className="container">
                 <ListingItems />
             </div>
