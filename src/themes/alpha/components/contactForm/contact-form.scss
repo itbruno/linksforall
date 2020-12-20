@@ -1,0 +1,91 @@
+@import '../../styles/variables';
+
+.contact-form {
+    margin-top: $gutter;
+
+    .content {
+        border: 2px solid lighten($primary-color, 10%);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        height: 60px;
+    }
+
+    input {
+        border: 0;
+        outline: 0;
+        background-color: transparent;
+        padding: $gutter / 2;
+        width: calc(100% - 60px);
+        height: 100%;
+        font-size: 16px; //avoid mobile zoom in
+
+        &:focus {
+            background-color: rgba($primary-color, .05);
+        }
+    }
+
+    button {
+        color: $primary-color;
+        width: 60px;
+        height: 56px;
+        line-height: 0;
+        margin-left: auto;
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+    }
+}
+
+.form-response {
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(118.42deg, lighten($primary-color, 7%) 16.26%, $primary-color 91.49%);;
+    color: #ffffff;
+    border-radius: 40px 40px 0 0;
+    padding: 40px 0;
+    position: fixed;
+    bottom: -200px;
+    left: 0;
+    text-align: center;
+    transition: all .2s ease;
+
+    h3 {
+        color: lighten($secondary-color, 10%);
+        margin: 15px 0 5px;
+    }
+    
+    h2 {
+        color: #ffffff;
+        margin: 0;
+    }
+    
+    .response-icon {
+        border-radius: 12px;
+        background-color: rgba(255,255,255,.1);
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto
+    }
+
+    &.is-visible {
+        bottom: 0;
+    }
+}
+
+.is-loading {
+    animation: loading 2.5s infinite linear;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
