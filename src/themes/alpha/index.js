@@ -5,7 +5,6 @@ import GoogleFontLoader from 'react-google-font-loader';
 // Components
 import Header from './components/header';
 import ListingItems from './components/listingItems';
-import ContactForm from './components/contactForm';
 
 // Services
 import Mock from '../services/api/mock';
