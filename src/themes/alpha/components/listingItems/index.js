@@ -3,6 +3,7 @@ import { useState, React, useEffect } from 'react';
 
 // Services
 import api from '../../../services/api';
+import Mock from '../../../services/api/mock';
 
 // Components
 import CategoryButton from '../categoryButton';
@@ -11,18 +12,15 @@ import LinkItem from '../linkItem';
 function ListingItems() {
     const { userId } = useParams();
     
-    const [links, setLinks] = useState();
-    const [categories, setCategories] = useState();
-    const [activeCategory, setActiveCategory] = useState();
+    const [links, setLinks] = useState(Mock.links);
+    const [categories, setCategories] = useState(Mock.categories);
+    const [activeCategory, setActiveCategory] = useState(Mock.categories[0].label);
     
     const categoryClass = 'js-category-button';
     const linkItemClass = 'js-link-item';
     
 
-    useEffect(() => {
-        apiResponse();
-    })
-
+    // Get Data from API
     async function apiResponse() {
         const res = await api.get(userId);
         setLinks(res.data.links);
