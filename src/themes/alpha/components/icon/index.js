@@ -1,7 +1,9 @@
-import * as ic from "react-icons/fi";
+import * as fi from "react-icons/fi";
+import * as fa from "react-icons/fa";
 
-function Icon({ name }) {
-    const GetIcon = name ? ic[name] : ic['FiLink'];
+function Icon({ name, is_brand }) {
+    const LibType = is_brand ? fa : fi;
+    const GetIcon = name ? LibType[name] : fi['FiLink'];
 
     return <GetIcon />
 }

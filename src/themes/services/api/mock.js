@@ -33,6 +33,33 @@ const Mock = {
             "categoryId": "articles",
             "categoryIcon": "FiEdit"
         }
+    ],
+
+    "social_links": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/brunowebr"
+        },
+
+        {
+            "name": "Github",
+            "url": "https://github.com/itbruno"
+        },
+
+        {
+            "name": "Dribbble",
+            "url": "https://dribbble.com/itbruno"
+        },
+
+        {
+            "name": "Medium",
+            "url": "https://medium.com/@itbruno"
+        },
+
+        {
+            "name": "Linkedin",
+            "url": "https://linkedin.com/in/itbruno"
+        }
     ]
 };
 
