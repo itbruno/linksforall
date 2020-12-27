@@ -45,7 +45,7 @@ function Home() {
                 </div>
 
                 {/* Social Icons */}
-                <div className="container social-links-wrapper">
+                <footer className="container social-links-wrapper">
                     <h2>Acompanhe</h2>
                     <ul className="social-links">
                         { Mock.social_links.map(link => (
@@ -58,7 +58,7 @@ function Home() {
                         ))}
                     </ul>
                     
-                </div>
+                </footer>
             </main>
         </>
     )
