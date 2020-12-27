@@ -37,27 +37,27 @@ const Mock = {
 
     "social_links": [
         {
-            "name": "Twitter",
+            "name": "twitter",
             "url": "https://twitter.com/brunowebr"
         },
 
         {
-            "name": "Github",
+            "name": "github",
             "url": "https://github.com/itbruno"
         },
 
         {
-            "name": "Dribbble",
+            "name": "dribbble",
             "url": "https://dribbble.com/itbruno"
         },
 
         {
-            "name": "Medium",
+            "name": "medium",
             "url": "https://medium.com/@itbruno"
         },
 
         {
-            "name": "Linkedin",
+            "name": "linkedin",
             "url": "https://linkedin.com/in/itbruno"
         }
     ]

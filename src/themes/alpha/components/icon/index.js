@@ -1,11 +1,21 @@
-import * as fi from "react-icons/fi";
-import * as fa from "react-icons/fa";
+import React from 'react';
+import { FaTwitter, FaGithub, FaMedium, FaDribbble, FaLinkedin } from 'react-icons/fa';
+import { FiEdit, FiLayers, FiLink } from 'react-icons/fi';
 
-function Icon({ name, is_brand }) {
-    const LibType = is_brand ? fa : fi;
-    const GetIcon = name ? LibType[name] : fi['FiLink'];
+const iconType = {
+    twitter: FaTwitter,
+    github: FaGithub,
+    medium: FaMedium,
+    dribbble: FaDribbble,
+    linkedin: FaLinkedin,
+    articles: FiEdit,
+    projects: FiLayers,
+    all: FiLink
+};
 
-    return <GetIcon />
+function Icon({ name, ...props }) {
+    let GetIcon = iconType[name];
+    return <GetIcon {...props} />
 }
 
 export default Icon;

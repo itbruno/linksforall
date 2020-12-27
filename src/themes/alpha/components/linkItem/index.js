@@ -5,7 +5,7 @@ function LinkItem(props) {
     return (
         <a href={props.url} className="js-link-item link-item active" data-category={props.category} target="_blank" rel="noopener noreferrer">
             <div className="link-item-icon">
-                <span className="icon icon-md"><Icon name={props.icon ? props.icon : 'FiLink'}/></span>
+                <span className="icon icon-md"><Icon name={props.category ? props.category : 'all'} /></span>
             </div>
             <div className="link-item-label">
                 {props.label}
