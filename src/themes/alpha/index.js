@@ -1,6 +1,8 @@
 // Libs and Vendors
 import React from 'react';
 import GoogleFontLoader from 'react-google-font-loader';
+import { Helmet } from 'react-helmet';
+import SEO from './settings/seo';
 
 // Components
 import Header from './components/header';
@@ -19,6 +21,11 @@ function Home() {
     return (
         <>
             {/* Load Google Font */}
+            <Helmet>
+                <title>{SEO.title}</title>
+                <meta name="description" content={SEO.description}/>
+            </Helmet>
+            
             <GoogleFontLoader fonts={[{ font: 'Montserrat', weights: [500, 600] }]} />
             
             <main>

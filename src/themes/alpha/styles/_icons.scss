@@ -7,6 +7,10 @@
     border-radius: 5px;
     margin-right: 12px;
 
+    svg {
+        stroke-width: .12rem;
+    }
+
     &:not(.icon-md) {
         width: $icon-default;
         height: $icon-default;
@@ -16,6 +20,6 @@
     &-md {
         width: $icon-md;
         height: $icon-md;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 }
