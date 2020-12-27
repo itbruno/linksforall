@@ -10,7 +10,7 @@ import ListingItems from './components/listingItems';
 import SocialLink from './components/socialLink';
 
 // Services
-import Mock from '../services/api/mock';
+import Mock from '../../services/api/mock';
 
 // Styles
 import './styles/globals.scss';
