@@ -6,32 +6,69 @@ const Mock = {
     "categories": [
         {
             "label": "Todos",
-            "id": "all",
-            "icon": "FiLink"
+            "id": "all"
         },
         {
             "label": "Projetos",
-            "id": "projects",
-            "icon": "FiLayers"
+            "id": "projects"
         },
         {
             "label": "Artigos",
-            "id": "articles",
-            "icon": "FiEdit"
+            "id": "articles"
+        },
+
+        {
+            "label": "Videos",
+            "id": "videos"
         }
     ],
     "links": [
         {
-            "label": "Link para projeto",
-            "url": "https://google.com",
+            "label": "Repositório com o código do projeto Linksforall",
             "categoryId": "projects",
-            "categoryIcon": "FiLayers"
+            "url": "https://tinu.be/linksforall"
         },
+
         {
-            "label": "Link para artigo",
-            "url": "https://itbruno.com.br",
+            "label": "Figma com UI do projeto Linksforall",
+            "categoryId": "projects",
+            "url": "https://tinu.be/uilinks"
+        },
+
+        {
+            "label": "Notion com dicas de performance web/mobile",
             "categoryId": "articles",
-            "categoryIcon": "FiEdit"
+            "url": "https://tinu.be/cssperf"
+        },
+
+        {
+            "label": "Paper to code, processo de um projeto do papel ao código no @codigodesign",
+            "categoryId": "videos",
+            "url": "https://tinu.be/papertocode01"
+        },
+
+        {
+            "label": "tinu.be - encurtador de url open-source",
+            "categoryId": "projects",
+            "url": "https://tinu.be"
+        },
+
+        {
+            "label": "Da teoria à prática: Criando um produto",
+            "categoryId": "articles",
+            "url": "https://tinu.be/tinubepost"
+        },
+
+        {
+            "label": "A história por trás da landing page de planos da Nuvemshop",
+            "categoryId": "articles",
+            "url": "https://tinu.be/plansnuvem"
+        },
+
+        {
+            "label": "[ES] La historia detrás de la landing page de planes y precios de Tiendanube",
+            "categoryId": "articles",
+            "url": "https://tinu.be/planstiendanube"
         }
     ],
 

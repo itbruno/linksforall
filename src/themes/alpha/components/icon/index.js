@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaTwitter, FaGithub, FaMedium, FaDribbble, FaLinkedin } from 'react-icons/fa';
-import { FiEdit, FiLayers, FiLink } from 'react-icons/fi';
+import { FiEdit, FiLayers, FiLink, FiPlayCircle } from 'react-icons/fi';
 
 const iconType = {
     twitter: FaTwitter,
@@ -10,6 +10,7 @@ const iconType = {
     linkedin: FaLinkedin,
     articles: FiEdit,
     projects: FiLayers,
+    videos: FiPlayCircle,
     all: FiLink
 };
 
