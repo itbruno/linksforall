@@ -47,7 +47,7 @@ function ListingItems() {
         <>
             {/* Nav with categories */}
             <nav className="nav-categories">
-                <div id="categories" className="nav-list">
+                <ul id="categories" className="nav-list">
                 { categories && categories.map((category, index) => (
                         <li className="nav-item" key={category.id}>
                             <CategoryButton
@@ -59,7 +59,7 @@ function ListingItems() {
                             />
                         </li>
                     ))}
-                </div>
+                </ul>
             </nav>
             
             <div id="links">
