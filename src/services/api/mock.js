@@ -50,7 +50,7 @@ const Mock = {
         {
             "label": "tinu.be - encurtador de url open-source",
             "categoryId": "projects",
-            "url": "https://tinu.be"
+            "url": "https://github.com/tinu-be"
         },
 
         {
