@@ -1,7 +1,7 @@
 import { useState, React } from 'react';
 
 // Services
-import Mock from '../../../services/api/mock';
+import Mock from '../../../../services/api/mock';
 
 // Components
 import CategoryButton from '../categoryButton';
