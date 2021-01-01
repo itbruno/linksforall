@@ -25,7 +25,10 @@ function Home() {
             <HelmetProvider>
                 <Helmet>
                     <title>{SEO.title}</title>
-                    <meta name="description" content={SEO.description}/>
+                    <meta name="description" content={SEO.description} />
+                    <meta property="og:type" content="website" />
+                    <meta property="og:title" content={SEO.title} />
+                    <meta property="og:image" content="./images/open-graph/og-image.jpg" />
                 </Helmet>
             </HelmetProvider>
             
