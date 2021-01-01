@@ -1,6 +1,8 @@
 /* Header */
+@import '../../styles/variables';
+
 header {
-    background-color: #495ECA;
+    background-color: $primary-color;
     color: #ffffff;
     padding: 50px 0 100px;
     align-items: center;
@@ -21,14 +23,13 @@ header {
     &.circle-blue {
         left: -50px;
         top: -100px;
-        background: #556BDA;
-        
+        background: darken($primary-color, 2%);
     }
 
     &.circle-orange {
         right: -180px;
         bottom: -130px;
-        background: #FFA45A;
+        background: $secondary-color;
     }
 }
 
