@@ -1,5 +1,5 @@
 # LinksforAll
-![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/itbruno/mylinks?label=version)
+![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/itbruno/linksforall?label=version)
 
 ![cover](https://cldup.com/v6OkMOSwGX-2000x2000.jpeg)
 
