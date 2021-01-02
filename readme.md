@@ -1,30 +1,24 @@
 # LinksforAll
+![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/itbruno/mylinks?label=version)
+
 ![cover](https://cldup.com/v6OkMOSwGX-2000x2000.jpeg)
 
-## Sobre o projeto
-**Linksforall** é um agregador de links que pode ser organizado com categorias e com um campo de email para captação/newsletter/etc. O objetivo desse projeto é que seja fácil de usar e customizar até mesmo para quem não é desenvolvedor(a), por isso nessa primeira versão utilizei apenas html/css/js sem nenhum framework atrelado. Basta fazer download e abrir o arquivo `index.html` no navegador que já vai está rodando.
+## Descrição
+**Linksforall** é um agregador de links que pode ser organizado com categorias e com um campo de email para captação/newsletter/etc.
 
-## Arquivos para Download
-|UI|HTML/CSS/JS|
-|--|-----------|
-|Interface criada no Figma: https://tinu.be/uilinks|**.zip** do código: https://github.com/itbruno/linksforall/archive/master.zip|
+## Arquivos para Download	
+|UI|HTML/CSS/JS|	
+|--|-----------|	
+|Interface criada no Figma: https://tinu.be/uilinks|**.zip** do última versão estável do código: https://github.com/itbruno/linksforall/archive/master.zip|
 
-
-## Como posso atualizar o conteúdo?
-Os arquivos para mudar conteúdo são o `index.html` e o `links.js`(dentro da pasta `/js`).
-
-Para alterar e criar novos links e categorias, você faz pelo `/js/links.js`
-
-As imagens estão na pasta `/images`, nela contêm os ícones e todas as imagens utilizadas.
-
-Para ver o passo a passo de como atualizar o conteúdo, basta acessar o link abaixo da Wiki:
-### https://github.com/itbruno/linksforall/wiki
-
-## Formulário de email
-Para facilitar a configuração do formulário utilizei o [Getform.io](https://getform.io), você pode se cadastrar e criar um novo formulário para gerar uma url como a que estão no projeto. Daí é só alterar:
-```html
-<form id="ajaxForm" action="URL_GERADA_PELO_GETFORM" method="POST" 
+## Setup
+Esse projeto está sendo desenvolvido com ReactJS. Para iniciar o projeto, rode o seguinte comando em seu terminal:
+```sh
+$ yarn install && yarn start
 ```
 
-## Próximos passos
-Esse projeto vai evoluir, então, possivelmente em breve quero criar uma versão mais dinâmica e componentizada com **ReactJS** ou alguma outra lib com um backend(_nodeJS talvez_) para a criação de links e categorias de forma dinâmica. Aceito sugestões 😊
+## Customização
+A UI é separada por temas. Para  customizar basta criar um novo tema dentro de `./src/themes/[nome-do-tema]` ou editar algum tema existente.
+
+## Dados
+Por enquanto os dados estão mocados, eles podem ser editados dentro do `.js` que está em `./src/services/api/mock.js`. Mas já existe um arquivo para configurar a api quando for criada 😉

@@ -1,0 +1,13 @@
+footer {
+    padding-bottom: $gutter * 1.5;
+}
+
+.social-links-wrapper {
+    padding-top: $gutter;
+
+    .social-links {
+        display: flex;
+        justify-content: space-between;
+        margin-top: $gutter / 2;
+    }
+}
