@@ -1,7 +1,8 @@
 const Mock = {
     "user": {
         "fullname": "Bruno Rodrigues",
-        "website": "itbruno.com.br"
+        "website": "itbruno.com.br",
+        "image": "https://avatars3.githubusercontent.com/u/3206543?s=400&u=10401f6bec19f1675f77a45ee9b40bfb1a293367&v=4"
     },
     "categories": [
         {

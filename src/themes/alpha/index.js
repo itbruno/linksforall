@@ -40,6 +40,7 @@ function Home() {
                 <Header 
                     name={Mock.user.fullname}
                     website={Mock.user.website}
+                    userImage={Mock.user.image}
                 />
 
                 {/* List with links */}
