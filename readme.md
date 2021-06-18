@@ -22,3 +22,7 @@ A UI é separada por temas. Para  customizar basta criar um novo tema dentro de 
 
 ## Dados
 Por enquanto os dados estão mocados, eles podem ser editados dentro do `.js` que está em `./src/services/api/mock.js`. Mas já existe um arquivo para configurar a api quando for criada 😉
+
+## Demo
+- [v1.0.0](https://linksforall.surge.sh)
+- [v2.0.1](https://linksforall.vercel.app)
