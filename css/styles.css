@@ -95,10 +95,8 @@ label {
 .offset-nav .btn-offset-nav {
     position: absolute;
     right: 0px;
-    background: #ffffff;
-    display: block;;
     height: 40px;
-    width: 50px;
+    width: 40px;
     border-radius: 10px 0 0 10px;
     z-index: 110;
     top: 70px;
@@ -108,24 +106,19 @@ label {
     transition: all .25s ease;
 }
 
-.offset-nav .btn-offset-nav:before,
+.offset-nav .btn-offset-nav img {
+    position: relative;
+    z-index: 10;
+}
+
 .offset-nav .btn-offset-nav:after {
     content: '';
     background: url('../images/rounded-corner.svg') no-repeat;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 140px;
     position: absolute;
-}
-
-.offset-nav .btn-offset-nav:before {
-    top: -19px;
-    right: 0;
-}
-
-.offset-nav .btn-offset-nav:after {
-    bottom: -19px;
-    right: 0;
-    transform: rotate(180deg) scaleX(-1);
+    transform: translateY(0px);
+    right: -1px;
 }
 
 .nav-opened {
@@ -212,7 +205,7 @@ header {
     color: #ffffff;
     opacity: .4;
     text-decoration: none;
-    transition: opacity .3s ease; 
+    transition: opacity .3s ease;
 }
 
 .user-info-content a:hover,
@@ -279,7 +272,7 @@ header {
     bottom: -1.5px;
     background: #FFA45A;
     transition: width .3s ease;
-}   
+}
 
 .nav-categories .nav-list .active:after {
     width: 60%;
@@ -491,7 +484,7 @@ footer label:after {
 
 .is-loading {
     border: 2px solid #ffffff;
-    border-left-color: #495ECA; 
+    border-left-color: #495ECA;
     border-radius: 100px;
     width: 24px;
     height: 24px;
