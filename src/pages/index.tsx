@@ -1,20 +1,19 @@
 import Head from 'next/head';
-import UserProps from '@interfaces/user';
-import User from '@lib/user.json';
 
 import { Alpha } from '@themes/alpha';
+import { DATA } from '@lib/data';
 
 export default function Home() {
-  const userinfo: UserProps = User;
+  const { user } = DATA;
   return (
     <>
       <Head>
         <title>
-          {userinfo.fullname} - {userinfo.role}
+          {user.fullname} - {user?.role}
         </title>
-        <meta name="description" content={userinfo.bio} />
+        <meta name="description" content={user.bio} />
       </Head>
-      <Alpha />
+      <Alpha data={DATA} />
     </>
   );
 }

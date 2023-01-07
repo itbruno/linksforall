@@ -1,21 +1,19 @@
-{
-  "categories": [
-    {
-      "label": "Todos",
-      "id": "all"
-    },
-    {
-      "label": "Projetos",
-      "id": "projects"
-    },
-    {
-      "label": "Artigos",
-      "id": "articles"
-    },
+[
+  {
+    "label": "Todos",
+    "id": "all"
+  },
+  {
+    "label": "Projetos",
+    "id": "projects"
+  },
+  {
+    "label": "Artigos",
+    "id": "articles"
+  },
 
-    {
-      "label": "Videos",
-      "id": "videos"
-    }
-  ]
-}
+  {
+    "label": "Videos",
+    "id": "videos"
+  }
+]
