@@ -8,9 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>
-          {user.fullname} - {user?.role}
-        </title>
+        <title>{`${user.fullname} - ${user?.role}`}</title>
         <meta name="description" content={user.bio} />
       </Head>
       <Alpha data={DATA} />
