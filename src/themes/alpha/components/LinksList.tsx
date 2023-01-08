@@ -15,7 +15,7 @@ function LinksList({ categories, links }: LinksListProps) {
   return (
     <div className="container px-4 max-w-lg relative">
       {hasCategories && <CategoriesList categories={categories} />}
-      <Links className="mt-6" links={links} />
+      <Links className="mt-6 pb-10" links={links} />
     </div>
   );
 }

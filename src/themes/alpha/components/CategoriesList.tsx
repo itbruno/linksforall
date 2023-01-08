@@ -7,7 +7,7 @@ interface CategoriesListProps {
 function CategoriesList({ categories, onSelectCategory }: CategoriesListProps) {
   return (
     <nav className="flex gap-5 items-center bg-blue-50/70 sm:rounded-bl-lg rounded-br-lg px-4 -mx-4 sm:mx-0">
-      <h2 className="text-cyan-600/70 text-sm font-medium min-w-[5rem]">
+      <h2 className="text-cyan-600 text-sm font-medium min-w-[5rem]">
         Filtrar por:
       </h2>
       <ul className="scrollbar-hide flex flex-nowrap overflow-x-auto -ml-4 -mr-4">

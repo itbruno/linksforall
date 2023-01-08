@@ -13,7 +13,7 @@ function Links({ className, links }: LinksComponentProps) {
         <a
           key={link.url}
           data-category={link.categoryId}
-          className="inline-flex items-center justify-between gap-6 transition-all px-4 py-4 rounded-lg font-medium  text-cyan-700 hover:bg-blue-50/50"
+          className="inline-flex items-center justify-between gap-6 transition-all px-4 py-4 rounded-lg font-medium  text-cyan-700 hover:bg-blue-50/70"
           href={link.url}
         >
           {link.label}
