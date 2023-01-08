@@ -12,7 +12,7 @@ function CategoriesList({ categories, onSelectCategory }: CategoriesListProps) {
           <li key={category.id}>
             <button
               onClick={onSelectCategory}
-              className="inline-flex bg-white px-6 shadow-lg shadow-blue-100/40 py-3 rounded-lg text-blue-400 font-semibold items-center sm:text-sm"
+              className="inline-flex bg-white px-6 shadow-lg shadow-blue-100/40 py-3 rounded-lg text-cyan-500 font-semibold items-center sm:text-sm"
               data-id={category.id}
               type="button"
             >
