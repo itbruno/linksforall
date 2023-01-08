@@ -4,12 +4,12 @@ import CategoriesPros from '@interfaces/categories';
 import LinksProps from '@interfaces/links';
 import { Links } from './Links';
 
-interface LinksListProps {
+interface ListingWrapperProps {
   categories: CategoriesPros[];
   links: LinksProps[];
 }
 
-function LinksList({ categories, links }: LinksListProps) {
+function ListingWrapper({ categories, links }: ListingWrapperProps) {
   const hasCategories = categories && categories?.length > 0;
 
   return (
@@ -20,4 +20,4 @@ function LinksList({ categories, links }: LinksListProps) {
   );
 }
 
-export { LinksList };
+export { ListingWrapper };
