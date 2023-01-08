@@ -3,7 +3,7 @@ import { CategoriesList } from './CategoriesList';
 import CategoriesPros from '@interfaces/categories';
 import LinksProps from '@interfaces/links';
 import { Links } from './Links';
-import React, { ReactNode, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 interface ListingWrapperProps {
   categories: CategoriesPros[];
