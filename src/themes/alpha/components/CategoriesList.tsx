@@ -2,9 +2,14 @@ import CategoriesPros from '@interfaces/categories';
 
 interface CategoriesListProps {
   categories: CategoriesPros[];
-  onSelectCategory?: () => void;
+  onSelectCategory?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  activeCategory: string;
 }
-function CategoriesList({ categories, onSelectCategory }: CategoriesListProps) {
+function CategoriesList({
+  activeCategory,
+  categories,
+  onSelectCategory
+}: CategoriesListProps) {
   return (
     <nav className="flex gap-5 items-center bg-blue-50/70 sm:rounded-bl-lg rounded-br-lg px-4 -mx-4 sm:mx-0">
       <h2 className="text-cyan-600 text-sm font-medium min-w-[5rem]">
@@ -15,7 +20,11 @@ function CategoriesList({ categories, onSelectCategory }: CategoriesListProps) {
           <li key={category.id}>
             <button
               onClick={onSelectCategory}
-              className="inline-flex px-3 py-4 text-blue-400 hover:text-blue-600 font-semibold items-center sm:text-sm transition-colors"
+              className={`inline-flex px-3 py-4 text-blue-400 hover:text-blue-600 font-semibold items-center sm:text-sm transition-colors ${
+                activeCategory == category.id
+                  ? 'text-blue-600 border-b-2 border-b-blue-600'
+                  : ''
+              }`}
               data-id={category.id}
               type="button"
             >
