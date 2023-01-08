@@ -1,9 +1,10 @@
 import DataProps from '@interfaces/data';
-import { CategoriesList } from './CategoriesList';
 import CategoriesPros from '@interfaces/categories';
 import LinksProps from '@interfaces/links';
+
+import { CategoriesList } from './Categories';
 import { Links } from './Links';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 interface ListingWrapperProps {
   categories: CategoriesPros[];

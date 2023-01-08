@@ -12,7 +12,12 @@ function Alpha({ data }: AlphaProps) {
   const { user, categories, links } = data;
   return (
     <main className={`${themeFont.className} antialiased`}>
-      <Header fullname={user.fullname} role={user.role} image={user.image} />
+      <Header
+        fullname={user.fullname}
+        role={user.role}
+        socialLinks={user.socialLinks}
+        image={user.image}
+      />
       <ListingWrapper categories={categories} links={links} />
     </main>
   );

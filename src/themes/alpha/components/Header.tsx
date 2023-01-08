@@ -1,8 +1,9 @@
 import UserProps from '@interfaces/user';
 import Image from 'next/image';
-import { Check, CircleWavyCheck } from 'phosphor-react';
+import { CircleWavyCheck } from 'phosphor-react';
+import { SocialLinks } from './SocialLinks';
 
-function Header({ fullname, image, role }: UserProps) {
+function Header({ fullname, image, role, socialLinks }: UserProps) {
   return (
     <header className="bg-blue-500 relative overflow-hidden">
       <div className="bg-[#556BDA] rounded-[100%] w-72 h-40 absolute -left-32 -rotate-[30deg]"></div>
@@ -28,6 +29,8 @@ function Header({ fullname, image, role }: UserProps) {
         <p className="text-sm inline-flex text-white font-semibold items-center opacity-80">
           {role}
         </p>
+
+        {socialLinks && <SocialLinks socialLinks={socialLinks} />}
       </div>
     </header>
   );
