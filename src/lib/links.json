@@ -1,12 +1,18 @@
 [
   {
-    "label": "Repositório com o código do projeto Linksforall",
+    "label": "Landing page Bio.links",
+    "categoryId": "projects",
+    "url": "https://tinu.be/lpBioLinks"
+  },
+
+  {
+    "label": "Repositório com o código do projeto Bio.links",
     "categoryId": "projects",
     "url": "https://tinu.be/linksforall"
   },
 
   {
-    "label": "Figma com UI do projeto Linksforall",
+    "label": "Figma com UI do projeto Bio.linyarn dev",
     "categoryId": "projects",
     "url": "https://tinu.be/uilinks"
   },
@@ -18,15 +24,15 @@
   },
 
   {
-    "label": "Paper to code, processo de um projeto do papel ao código no @codigodesign",
+    "label": "[Indicação] Dicas e boas práticas de UI Design com Chief of Design",
     "categoryId": "videos",
-    "url": "https://tinu.be/papertocode01"
+    "url": "https://tinu.be/qeIBeN_W4"
   },
 
   {
     "label": "tinu.be - encurtador de url open-source",
     "categoryId": "projects",
-    "url": "https://github.com/tinu-be"
+    "url": "https://tinu.be"
   },
 
   {
