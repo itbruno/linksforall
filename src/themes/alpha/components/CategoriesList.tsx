@@ -6,13 +6,16 @@ interface CategoriesListProps {
 }
 function CategoriesList({ categories, onSelectCategory }: CategoriesListProps) {
   return (
-    <nav>
-      <ul className="scrollbar-hide flex flex-nowrap overflow-x-auto gap-4 -mt-6 -ml-4 -mr-4 px-4 min-h-[4rem]">
+    <nav className="flex gap-5 items-center bg-blue-50/70 sm:rounded-bl-lg rounded-br-lg px-4 -mx-4 sm:mx-0">
+      <h2 className="text-cyan-600/70 text-sm font-medium min-w-[5rem]">
+        Filtrar por:
+      </h2>
+      <ul className="scrollbar-hide flex flex-nowrap overflow-x-auto -ml-4 -mr-4">
         {categories?.map((category) => (
           <li key={category.id}>
             <button
               onClick={onSelectCategory}
-              className="inline-flex bg-white px-6 shadow-lg shadow-blue-100/40 py-3 rounded-lg text-cyan-500 font-semibold items-center sm:text-sm"
+              className="inline-flex px-3 py-4 text-blue-400 hover:text-blue-600 font-semibold items-center sm:text-sm transition-colors"
               data-id={category.id}
               type="button"
             >
