@@ -11,7 +11,7 @@ function CategoriesList({
   onSelectCategory
 }: CategoriesListProps) {
   return (
-    <nav className="sticky top-0 flex gap-5 items-center bg-blue-50 z-10 sm:rounded-bl-lg rounded-br-lg px-4 -mx-4 sm:mx-0">
+    <nav className="sticky top-0 flex gap-5 items-center bg-blue-50 z-10 sm:rounded-bl-xl sm:rounded-br-xl px-4 -mx-4 sm:mx-0">
       <h2 className="text-cyan-600 text-sm font-medium min-w-[5rem]">
         Filtrar por:
       </h2>
