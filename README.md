@@ -14,18 +14,25 @@ This is a open-source project to
 
 This project was created on NextJS with Typescript and Tailwind CSS.
 
-Begin installing all dependencies:
+1. Begin installing all dependencies:
 
 ```shell
-$ npm run install
+npm run install
+# or
+yarn
 ```
 
-or
+2. Run dev command to load nextjs
 
 ```shell
-$ yarn install
+npm run dev
 ```
 
+3. Open local URL
+
+```
+http://localhost:3000
+```
 ## Base structure
 
 ### Content location
@@ -54,8 +61,7 @@ Links are array with the following structure:
     "label": "Open-source link page",
     "categoryId": "projects",
     "url": "https://github.com/itbruno/linksforall"
-  },
-  ...
+  }
 ]
 ```
 
@@ -73,8 +79,7 @@ Categories are optional to filter links, keep the array empty if you don't use.
   {
     "label": "Projects",
     "id": "projects",
-  },
-  ...
+  }
 ]
 ```
 
