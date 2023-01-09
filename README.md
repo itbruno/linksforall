@@ -1,6 +1,6 @@
 # LinksforAll
 
-This is a open-source project to
+Open source link page with custom filters to keep all your links in one place.
 
 ![GitHub tag (latest SemVer)](https://img.shields.io/github/package-json/v/itbruno/linksforall)
 
@@ -12,7 +12,8 @@ This is a open-source project to
 
 ## Get started
 
-This project was created on NextJS with Typescript and Tailwind CSS.
+This project was created on [NextJS](https://nextjs.org/) with Typescript and [Tailwind CSS](https://tailwindcss.com/).
+Icons from [Phosphoricons](https://phosphoricons.com/) lib
 
 Begin installing all dependencies:
 
