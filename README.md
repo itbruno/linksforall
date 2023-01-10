@@ -2,7 +2,7 @@
 
 Open source link page with custom filters to keep all your links in one place.
 
-![GitHub tag (latest SemVer)](https://img.shields.io/github/package-json/v/itbruno/linksforall)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fitbruno%2Flinksforall)
 
 ![linksforall](https://user-images.githubusercontent.com/3206543/211458118-2a11815a-dc47-46d6-b466-f088de3bfecf.jpg)
 
@@ -152,9 +152,8 @@ export default function Home() {
 
 ## Design
 
-Some themes availbale with [Figma](https://tinu.be/uilinks)
+Some themes are availbale with [Figma](https://tinu.be/uilinks)
 
-## Versions and Demo
+## Current version
 
-- [v1.0.1](https://linksforall.surge.sh)
-- [v2.0.1](https://linksforall.vercel.app)
+![GitHub tag (latest SemVer)](https://img.shields.io/github/package-json/v/itbruno/linksforall)
