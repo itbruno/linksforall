@@ -1,0 +1,55 @@
+[
+  {
+    "label": "Landing page Bio.links",
+    "categoryId": "projects",
+    "url": "https://tinu.be/lpBioLinks"
+  },
+
+  {
+    "label": "Repositório com o código do projeto Bio.links",
+    "categoryId": "projects",
+    "url": "https://tinu.be/linksforall"
+  },
+
+  {
+    "label": "Figma com UI do projeto Bio.links dev",
+    "categoryId": "projects",
+    "url": "https://tinu.be/uilinks"
+  },
+
+  {
+    "label": "Notion com dicas de performance web/mobile",
+    "categoryId": "articles",
+    "url": "https://tinu.be/cssperf"
+  },
+
+  {
+    "label": "[Indicação] Dicas e boas práticas de UI Design com Chief of Design",
+    "categoryId": "videos",
+    "url": "https://tinu.be/qeIBeN_W4"
+  },
+
+  {
+    "label": "tinu.be - encurtador de url open-source",
+    "categoryId": "projects",
+    "url": "https://tinu.be"
+  },
+
+  {
+    "label": "Da teoria à prática: Criando um produto",
+    "categoryId": "articles",
+    "url": "https://tinu.be/tinubepost"
+  },
+
+  {
+    "label": "A história por trás da landing page de planos da Nuvemshop",
+    "categoryId": "articles",
+    "url": "https://tinu.be/plansnuvem"
+  },
+
+  {
+    "label": "[ES] La historia detrás de la landing page de planes y precios de Tiendanube",
+    "categoryId": "articles",
+    "url": "https://tinu.be/planstiendanube"
+  }
+]
