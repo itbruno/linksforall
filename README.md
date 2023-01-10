@@ -124,7 +124,9 @@ The user file is all personal content from page, feel free to create/update new 
 Here is the best part, you can use the current themes or create your own.
 Use your creativity and/or tech skill to generate awesome themes.
 
-Themes are located in
+We have 2 custom themes: **Alpha** e **Dracula** (based on [Dracula](https://draculatheme.com/contribute) dark theme from [Zeno Rocha](https://github.com/zenorocha))
+
+Themes are located in:
 
 ```shell
 ./src/themes/[THEME_NAME]
