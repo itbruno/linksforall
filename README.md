@@ -4,7 +4,7 @@ Open source link page with custom filters to keep all your links in one place.
 
 ![GitHub tag (latest SemVer)](https://img.shields.io/github/package-json/v/itbruno/linksforall)
 
-![linksforall](https://user-images.githubusercontent.com/3206543/211219655-832f3f3e-820d-4abd-a8b0-dd9a741fe4ca.jpg)
+![linksforall](https://user-images.githubusercontent.com/3206543/211458118-2a11815a-dc47-46d6-b466-f088de3bfecf.jpg)
 
 ## Description
 
@@ -34,6 +34,7 @@ npm run dev
 ```
 http://localhost:3000
 ```
+
 ## Base structure
 
 ### Content location
@@ -79,7 +80,7 @@ Categories are optional to filter links, keep the array empty if you don't use.
 [
   {
     "label": "Projects",
-    "id": "projects",
+    "id": "projects"
   }
 ]
 ```
