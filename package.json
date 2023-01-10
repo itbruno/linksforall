@@ -1,7 +1,9 @@
 {
   "name": "linksforall",
-  "version": "0.1.0",
-  "private": true,
+  "version": "3.0.0",
+  "author": "Bruno Rodrigues",
+  "repository": "itbruno/linksforall",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
