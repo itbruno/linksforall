@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 import { Alpha } from '@themes/alpha';
 import { DATA } from '@lib/data';
-import { GA4 } from 'src/utils/ga4';
+import { GA4 } from '@utils/ga4';
 
 export default function Home() {
   const { user } = DATA;

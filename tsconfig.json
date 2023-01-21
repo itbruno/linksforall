@@ -16,6 +16,7 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
+      "@utils/*": ["./src/utils/*"],
       "@components/*": ["./src/components/*"],
       "@themes/*": ["./src/themes/*"],
       "@lib/*": ["./src/lib/*"],
