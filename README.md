@@ -7,6 +7,7 @@ Open source link page with custom filters to keep all your links in one place.
 ![linksforall](https://user-images.githubusercontent.com/3206543/211458118-2a11815a-dc47-46d6-b466-f088de3bfecf.jpg)
 
 ### Demo
+
 - [Alpha theme](https://linksforall.vercel.app/)
 - [Dracula theme](https://links-dracula.vercel.app/) (_created using Deploy button above_)
 
@@ -152,6 +153,16 @@ export default function Home() {
     </>
   );
 }
+```
+
+## Environment variables - SEO
+
+We have **Google Analytics 4** pre-configured in the project. And you don't need touch in code to setup, it simple:
+To use local, create `.env.local` file at root project directory with your GA4 id:
+
+```shell
+# .env.local
+NEXT_PUBLIC_GA4_ID=G-AAA0001112T
 ```
 
 ## Design
