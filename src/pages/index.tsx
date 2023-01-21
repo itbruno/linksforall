@@ -15,6 +15,12 @@ export default function Home() {
         <meta name="description" content={user.bio} />
         <link rel="icon" href="/images/favicon.png" />
         <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+
+        <meta name="robots" content="index,follow" />
+
+        <meta property="og:title" content={user.fullname} />
+        <meta property="og:description" content={user.bio} />
+        <meta property="og:type" content="website" />
       </Head>
       <Alpha data={DATA} />
       {GA4ID && <GA4 ga4Id={GA4ID} />}
