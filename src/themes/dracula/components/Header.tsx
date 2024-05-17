@@ -15,6 +15,7 @@ function Header({ fullname, image, role, socialLinks }: UserProps) {
               alt={fullname}
               width={90}
               height={90}
+              priority
             />
           )}
 
