@@ -1,6 +1,6 @@
 export default interface SocialLinksProps {
   youtube?: string;
-  twitter?: string;
+  x?: string;
   medium?: string;
   facebook?: string;
   github?: string;
