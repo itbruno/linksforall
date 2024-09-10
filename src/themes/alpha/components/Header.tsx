@@ -1,6 +1,6 @@
 import UserProps from '@interfaces/user';
 import Image from 'next/image';
-import { CircleWavyCheck } from 'phosphor-react';
+import { CircleWavyCheck } from '@phosphor-icons/react';
 import { SocialLinks } from './SocialLinks';
 
 function Header({ fullname, image, role, socialLinks }: UserProps) {

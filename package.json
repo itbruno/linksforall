@@ -1,6 +1,6 @@
 {
   "name": "linksforall",
-  "version": "3.0.2",
+  "version": "3.1.0",
   "author": "Bruno Rodrigues",
   "repository": "itbruno/linksforall",
   "license": "MIT",
@@ -11,22 +11,25 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/node": "18.11.18",
-    "@types/react": "18.0.26",
-    "@types/react-dom": "18.0.10",
-    "eslint": "8.31.0",
-    "eslint-config-next": "^14.1.0",
-    "next": "^14.1.0",
-    "phosphor-react": "^1.4.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "typescript": "4.9.4"
+    "@phosphor-icons/react": "^2.1.7",
+    "@types/node": "22.5.4",
+    "@types/react": "18.3.5",
+    "@types/react-dom": "18.3.0",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.9",
+    "next": "14.2.9",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "typescript": "5.6.2"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "eslint-config-prettier": "^8.6.0",
-    "postcss": "^8.4.21",
-    "prettier": "2.8.2",
-    "tailwindcss": "^3.2.4"
+    "autoprefixer": "10.4.20",
+    "eslint-config-prettier": "9.1.0",
+    "postcss": "8.4.45",
+    "prettier": "3.3.3",
+    "tailwindcss": "3.4.10"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

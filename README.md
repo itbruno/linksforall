@@ -20,7 +20,7 @@ Open source link page with custom filters to keep all your links in one place.
 This project was created on [NextJS](https://nextjs.org/) with Typescript and [Tailwind CSS](https://tailwindcss.com/).
 Icons from [Phosphoricons](https://phosphoricons.com/) lib
 
-1. Begin installing all dependencies:
+1. Begin installing all dependencies (_req. node >=18.0.0_):
 
 ```shell
 npm run install
