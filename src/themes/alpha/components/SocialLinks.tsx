@@ -1,4 +1,3 @@
-import DataProps from '@interfaces/data';
 import SocialLinksProps from '@interfaces/social-links';
 import {
   DribbbleLogo,
@@ -9,7 +8,7 @@ import {
   MediumLogo,
   TwitterLogo,
   YoutubeLogo
-} from 'phosphor-react';
+} from '@phosphor-icons/react';
 
 interface SocialLinksComponentProps {
   socialLinks: SocialLinksProps;

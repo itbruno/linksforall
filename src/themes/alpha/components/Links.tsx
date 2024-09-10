@@ -1,5 +1,5 @@
 import LinksProps from '@interfaces/links';
-import { ArrowArcRight, ArrowCircleRight, LinkSimple } from 'phosphor-react';
+import { ArrowArcRight, ArrowCircleRight, LinkSimple } from '@phosphor-icons/react';
 
 interface LinksComponentProps {
   links: LinksProps[];

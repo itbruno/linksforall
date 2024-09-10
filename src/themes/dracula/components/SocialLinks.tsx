@@ -9,7 +9,7 @@ import {
   MediumLogo,
   TwitterLogo,
   YoutubeLogo
-} from 'phosphor-react';
+} from '@phosphor-icons/react';
 
 interface SocialLinksComponentProps {
   socialLinks: SocialLinksProps;
