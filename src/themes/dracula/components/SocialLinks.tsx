@@ -7,7 +7,7 @@ import {
   InstagramLogo,
   LinkedinLogo,
   MediumLogo,
-  TwitterLogo,
+  XLogo,
   YoutubeLogo
 } from '@phosphor-icons/react';
 
@@ -38,7 +38,7 @@ function SocialLinks({ socialLinks }: SocialLinksComponentProps) {
           href={socialLinks.twitter}
           aria-label="twitter"
         >
-          <TwitterLogo size={32} />
+          <XLogo size={32} />
         </a>
       )}
 
