@@ -1,4 +1,5 @@
 import { IEmailRepository, IEmailMessageProps } from './IEmailRepository';
+import { SendEmailError } from './SendEmailError';
 
 export class SendEmailUseCase {
   constructor(private emailClient: IEmailRepository) {}
@@ -7,7 +8,7 @@ export class SendEmailUseCase {
     try {
       await this.emailClient.sendMail(data);
     } catch (err) {
-      throw new Error("Can't send the e-mail");
+      throw new SendEmailError("Can't send the e-mail", err);
     }
   }
 }
