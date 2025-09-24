@@ -3,13 +3,19 @@ export interface IEmailContactProps {
   email: string;
 }
 
-export interface IEmailMessageProps {
+export interface SendMailDTO {
   from: IEmailContactProps;
   to: string;
   subject: string;
   message: string;
 }
 
+export interface IEmailResponse {
+  success: boolean;
+  messageId?: string;
+  error?: string;
+}
+
 export interface IEmailRepository {
-  sendMail(data: IEmailMessageProps): Promise<void>;
+  sendMail(data: SendMailDTO): Promise<IEmailResponse>;
 }

@@ -1,14 +1,16 @@
-import { IEmailRepository, IEmailMessageProps } from './IEmailRepository';
+import { IEmailRepository, SendMailDTO } from './IEmailRepository';
 import { SendEmailError } from './SendEmailError';
 
 export class SendEmailUseCase {
-  constructor(private emailClient: IEmailRepository) {}
+  constructor(private mailProvider: IEmailRepository) {}
 
-  async execute(data: IEmailMessageProps) {
-    try {
-      await this.emailClient.sendMail(data);
-    } catch (err) {
-      throw new SendEmailError("Can't send the e-mail", err);
+  async execute(data: SendMailDTO) {
+    const response = await this.mailProvider.sendMail(data);
+
+    if (!response.success) {
+      throw new SendEmailError(response.error);
     }
+
+    return response;
   }
 }
