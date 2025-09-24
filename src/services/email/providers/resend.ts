@@ -11,7 +11,7 @@ export class ResendMailProvider implements IEmailRepository {
 
   async sendMail(messageData: IEmailMessageProps): Promise<void> {
     const { from, message, subject, to } = messageData;
-    const { data, error } = await this.resend.emails.send({
+    const { error } = await this.resend.emails.send({
       from: `${from.name} <${from.email}>`,
       to: [to],
       subject,
