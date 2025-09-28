@@ -9,7 +9,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest"
+    "test": " jest"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.7",

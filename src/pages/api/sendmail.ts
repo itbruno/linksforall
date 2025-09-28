@@ -1,5 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { SendEmail } from 'src/services/email';
+import { SendEmailError } from 'src/services/email/SendEmailError';
 
 export default async function handler(
   req: NextApiRequest,
@@ -15,7 +16,7 @@ export default async function handler(
     }
 
     try {
-      await SendEmail.execute({
+      const response = await SendEmail.execute({
         from: {
           name: process.env.COMPANY_NAME || 'LinksforAll',
           email: process.env.EMAIL_FROM || ''
@@ -25,9 +26,11 @@ export default async function handler(
         message
       });
 
-      res.status(200).json({
-        message: 'Mail sent successfully'
-      });
+      if (response.success) {
+        return res.status(200).json(response);
+      }
+
+      throw new SendEmailError('Email cannot be sent.');
     } catch (err) {
       console.log(err);
       res.status(400).json({
