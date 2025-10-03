@@ -6,7 +6,7 @@ export class SendEmailError extends Error {
     originalError?: unknown
   ) {
     super(message);
-    this.name = 'EmailSendFailerError';
+    this.name = 'EmailSendFailedError';
     this.originalError = originalError;
   }
 }
