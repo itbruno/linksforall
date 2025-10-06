@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@plugin '@tailwincss/forms';
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;

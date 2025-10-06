@@ -9,6 +9,7 @@ export default async function handler(
   if (req.method === 'POST') {
     const { message, email } = req.body;
 
+    console.log(message, email);
     if (!message || !email) {
       res.status(400).json({
         message: `Missing message or email params`
