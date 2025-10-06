@@ -52,7 +52,7 @@ All content are located in:
 ./src/lib/user.json
 ```
 
-#### Links
+### Links
 
 Links are array with the following structure:
 
@@ -72,7 +72,7 @@ Links are array with the following structure:
 ]
 ```
 
-#### Categories (optional)
+### Categories (optional)
 
 Categories are optional to filter links, keep the array empty if you don't use.
 
@@ -90,7 +90,7 @@ Categories are optional to filter links, keep the array empty if you don't use.
 ]
 ```
 
-#### User
+### User
 
 The user file is all personal content from page, feel free to create/update new fields and use in your page.
 
@@ -161,8 +161,15 @@ We have **Google Analytics 4** pre-configured in the project. And you don't need
 To use local, create `.env.local` file at root project directory with your GA4 id:
 
 ```shell
-# .env.local
-NEXT_PUBLIC_GA4_ID=G-AAA0001112T
+# Google Analytics
+NEXT_PUBLIC_GA4_ID=
+
+# Email provider :: Resend
+RESEND_API_KEY=
+EMAIL_COMPANY_NAME=
+EMAIL_FROM=
+EMAIL_TO=
+
 ```
 
 ## Design
