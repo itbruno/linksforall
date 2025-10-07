@@ -1,5 +1,5 @@
 import { CircleNotch, XCircle } from '@phosphor-icons/react';
-import { useForm } from '@tanstack/react-form';
+import { AnyFormApi, FormApi, useForm } from '@tanstack/react-form';
 import { useSendEmail } from '@services/email/hooks/useSendEmail';
 import z from 'zod';
 import { toast, Toaster } from 'sonner';
@@ -14,12 +14,12 @@ const contactFormSchema = z.object({
 function ContactFormBlock() {
   const { handleSendEmail, status } = useSendEmail();
   const form = useForm({
-    onSubmit: handleSubmit,
     defaultValues: {
       name: '',
       email: '',
       message: ''
     },
+    onSubmit: handleSubmit,
     validators: {
       onChange: contactFormSchema
     }
@@ -40,6 +40,7 @@ function ContactFormBlock() {
           toast('Email sent successfully', {
             icon: <CheckCircle size={18} weight="fill" />
           });
+          form.reset();
         },
         onError: (err) => {
           toast(err.message, {
@@ -72,6 +73,7 @@ function ContactFormBlock() {
                   type="text"
                   id={fieldName.name}
                   name={fieldName.name}
+                  value={fieldName.state.value}
                   className="form-input border-gray-200 rounded-md"
                   onChange={(e) => fieldName.handleChange(e.target.value)}
                 />
@@ -100,6 +102,7 @@ function ContactFormBlock() {
                   type="email"
                   id={fieldEmail.name}
                   name={fieldEmail.name}
+                  value={fieldEmail.state.value}
                   className="form-input border-gray-200 rounded-md"
                   onChange={(e) => fieldEmail.handleChange(e.target.value)}
                 />
@@ -127,6 +130,7 @@ function ContactFormBlock() {
                 <textarea
                   id={fieldMessage.name}
                   name={fieldMessage.name}
+                  value={fieldMessage.state.value}
                   className="form-input border-gray-200 rounded-md"
                   onChange={(e) => fieldMessage.handleChange(e.target.value)}
                 />
