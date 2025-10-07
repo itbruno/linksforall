@@ -22,7 +22,8 @@
       "@lib/*": ["./src/lib/*"],
       "@assets/*": ["./src/assets/*"],
       "@interfaces/*": ["./src/interfaces/*"],
-      "@blocks/*": ["./src/blocks/*"]
+      "@blocks/*": ["./src/blocks/*"],
+      "@services/*": ["./src/services/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
