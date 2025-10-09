@@ -1,8 +1,8 @@
-import { CircleNotch, XCircle } from '@phosphor-icons/react';
-import { AnyFormApi, FormApi, useForm } from '@tanstack/react-form';
+import { CircleNotch, PaperPlaneTilt, XCircle } from '@phosphor-icons/react';
+import { useForm } from '@tanstack/react-form';
 import { useSendEmail } from '@services/email/hooks/useSendEmail';
 import z from 'zod';
-import { toast, Toaster } from 'sonner';
+import { toast } from 'sonner';
 import { CheckCircle } from '@phosphor-icons/react/dist/ssr';
 
 const contactFormSchema = z.object({
@@ -52,8 +52,8 @@ function ContactFormBlock() {
   }
 
   return (
-    <div>
-      <h2 className="text-2xl font-semibold text-gray-700">Contact us</h2>
+    <div className="card p-6">
+      <h2 className="heading-color text-2xl font-semibold">Contact us</h2>
       <form
         className="flex gap-6 flex-col mt-6"
         onSubmit={(e) => {
@@ -62,7 +62,7 @@ function ContactFormBlock() {
         }}
       >
         <div className="flex gap-2 flex-col">
-          <label className="text-sm font-semibold text-zinc-800" htmlFor="name">
+          <label className="form-label" htmlFor="name">
             Name
           </label>
           <form.Field
@@ -74,11 +74,11 @@ function ContactFormBlock() {
                   id={fieldName.name}
                   name={fieldName.name}
                   value={fieldName.state.value}
-                  className="form-input border-gray-200 rounded-md"
+                  className="form-input"
                   onChange={(e) => fieldName.handleChange(e.target.value)}
                 />
                 {!fieldName.state.meta.isValid && (
-                  <span className="text-red-500 text-xs font-semibold">
+                  <span className="form-message-error text-xs font-semibold">
                     {fieldName.state.meta.errors[0]?.message ?? ''}
                   </span>
                 )}
@@ -88,10 +88,7 @@ function ContactFormBlock() {
         </div>
 
         <div className="flex gap-2 flex-col">
-          <label
-            className="text-sm font-semibold text-zinc-800"
-            htmlFor="email"
-          >
+          <label className="form-label" htmlFor="email">
             Email
           </label>
           <form.Field
@@ -103,11 +100,11 @@ function ContactFormBlock() {
                   id={fieldEmail.name}
                   name={fieldEmail.name}
                   value={fieldEmail.state.value}
-                  className="form-input border-gray-200 rounded-md"
+                  className="form-input"
                   onChange={(e) => fieldEmail.handleChange(e.target.value)}
                 />
                 {!fieldEmail.state.meta.isValid && (
-                  <span className="text-red-500 text-xs font-semibold">
+                  <span className="form-message-error">
                     {fieldEmail.state.meta.errors[0]?.message ?? ''}
                   </span>
                 )}
@@ -117,10 +114,7 @@ function ContactFormBlock() {
         </div>
 
         <div className="flex gap-2 flex-col">
-          <label
-            className="text-sm font-semibold text-zinc-800"
-            htmlFor="email"
-          >
+          <label className="form-label" htmlFor="email">
             Message
           </label>
           <form.Field
@@ -131,11 +125,11 @@ function ContactFormBlock() {
                   id={fieldMessage.name}
                   name={fieldMessage.name}
                   value={fieldMessage.state.value}
-                  className="form-input border-gray-200 rounded-md"
+                  className="form-input"
                   onChange={(e) => fieldMessage.handleChange(e.target.value)}
                 />
                 {!fieldMessage.state.meta.isValid && (
-                  <span className="text-red-500 text-xs font-semibold">
+                  <span className="form-message-error">
                     {fieldMessage.state.meta.errors[0]?.message ?? ''}
                   </span>
                 )}
@@ -144,17 +138,13 @@ function ContactFormBlock() {
           />
         </div>
 
-        <button
-          className="flex gap-4 items-center justify-center bg-zinc-900 text-white rounded-md px-4 py-2 hover:bg-zinc-800 transition-colors"
-          type="submit"
-        >
-          Send message
+        <button className="form-submit" type="submit">
+          Send message <PaperPlaneTilt weight="duotone" />
           {status === 'pending' && (
             <CircleNotch size={18} weight="regular" className="animate-spin" />
           )}
         </button>
       </form>
-      <Toaster />
     </div>
   );
 }

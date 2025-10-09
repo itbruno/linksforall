@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { Alpha } from '@themes/alpha';
 import { DATA } from '@lib/data';
 import { GA4 } from '@utils/ga4';
+import { ContactFormBlock } from '@blocks/ContactFormBlock';
 
 export default function Home() {
   const { user } = DATA;
@@ -22,7 +23,11 @@ export default function Home() {
         <meta property="og:description" content={user.bio} />
         <meta property="og:type" content="website" />
       </Head>
-      <Alpha data={DATA} />
+      <Alpha data={DATA}>
+        <div className="container max-w-lg px-4 flex flex-col gap-6 animate-slide-up">
+          <ContactFormBlock />
+        </div>
+      </Alpha>
       {GA4ID && <GA4 ga4Id={GA4ID} />}
     </>
   );

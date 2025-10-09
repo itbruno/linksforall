@@ -3,8 +3,61 @@
 @tailwind utilities;
 @plugin '@tailwincss/forms';
 
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+[data-theme='dark'] {
+  .heading-color {
+    @apply text-slate-300;
+  }
+
+  .card {
+    @apply bg-white/5;
+  }
+  .form-input {
+    @apply text-white bg-white/5 border-slate-200/5;
+  }
+
+  .form-label {
+    @apply text-white;
+  }
+
+  .form-submit,
+  .button {
+    @apply bg-white hover:bg-white/70 text-zinc-900;
+  }
+
+  .form-message-error {
+    @apply text-red-400;
+  }
+}
+
+.heading-color {
+  @apply text-slate-600;
+}
+
+.form-input {
+  @apply border-slate-200 rounded-md;
+}
+
+.form-label {
+  @apply text-sm font-semibold text-zinc-800;
+}
+
+.form-submit,
+.button {
+  @apply font-semibold text-sm flex gap-3 items-center justify-center bg-zinc-900 text-white rounded-md px-4 py-3 hover:bg-zinc-800 transition-colors;
+}
+
+.form-message-error {
+  @apply text-red-500 text-xs font-semibold;
+}
+
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+
+.card {
+  @apply rounded-xl bg-slate-50;
 }
 
 .scrollbar-hide {

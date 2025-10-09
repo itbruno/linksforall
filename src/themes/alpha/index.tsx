@@ -3,13 +3,15 @@ import { Header } from './components/Header';
 import { Montserrat } from 'next/font/google';
 import { ListingWrapper } from './components/ListingWrapper';
 import { ContactFormBlock } from '@blocks/ContactFormBlock';
+import React, { Children } from 'react';
 
 const themeFont = Montserrat({ subsets: ['latin'] });
 interface AlphaProps {
   data: DataProps;
+  children?: React.ReactNode;
 }
 
-function Alpha({ data }: AlphaProps) {
+function Alpha({ data, children }: AlphaProps) {
   const { user, categories, links } = data;
   return (
     <main className={`${themeFont.className} antialiased`}>
@@ -20,9 +22,7 @@ function Alpha({ data }: AlphaProps) {
         image={user.image}
       />
       <ListingWrapper categories={categories} links={links} />
-      <div className="container max-w-lg px-4 flex flex-col gap-6 animate-slide-up">
-        <ContactFormBlock />
-      </div>
+      {children}
     </main>
   );
 }
