@@ -139,9 +139,11 @@ function ContactFormBlock() {
         </div>
 
         <button className="form-submit" type="submit">
-          Send message <PaperPlaneTilt weight="duotone" />
-          {status === 'pending' && (
+          Send message
+          {status === 'pending' ? (
             <CircleNotch size={18} weight="regular" className="animate-spin" />
+          ) : (
+            <PaperPlaneTilt weight="duotone" />
           )}
         </button>
       </form>
