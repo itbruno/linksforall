@@ -1,9 +1,6 @@
 {
   "extends": ["next/core-web-vitals", "prettier"],
-  "react/no-children-prop": [
-    true,
-    {
-      "allowFunctions": true
-    }
-  ]
+  "rules": {
+    "react/no-children-prop": ["error", { "allowFunctions": true }]
+  }
 }
