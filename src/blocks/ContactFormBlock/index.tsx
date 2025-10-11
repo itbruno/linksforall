@@ -1,9 +1,13 @@
-import { CircleNotch, PaperPlaneTilt, XCircle } from '@phosphor-icons/react';
+import {
+  CheckCircleIcon,
+  CircleNotchIcon,
+  PaperPlaneTiltIcon,
+  XCircleIcon
+} from '@phosphor-icons/react';
 import { useForm } from '@tanstack/react-form';
 import { useSendEmail } from '@services/email/hooks/useSendEmail';
 import z from 'zod';
 import { toast } from 'sonner';
-import { CheckCircle } from '@phosphor-icons/react/dist/ssr';
 
 const contactFormSchema = z.object({
   name: z.string().nonempty(),
@@ -38,13 +42,13 @@ function ContactFormBlock() {
       {
         onSuccess: () => {
           toast('Email sent successfully', {
-            icon: <CheckCircle size={18} weight="fill" />
+            icon: <CheckCircleIcon size={18} weight="fill" />
           });
           form.reset();
         },
         onError: (err) => {
           toast(err.message, {
-            icon: <XCircle size={18} weight="fill" />
+            icon: <XCircleIcon size={18} weight="fill" />
           });
         }
       }
@@ -141,9 +145,13 @@ function ContactFormBlock() {
         <button className="form-submit" type="submit">
           Send message
           {status === 'pending' ? (
-            <CircleNotch size={18} weight="regular" className="animate-spin" />
+            <CircleNotchIcon
+              size={18}
+              weight="regular"
+              className="animate-spin"
+            />
           ) : (
-            <PaperPlaneTilt weight="duotone" />
+            <PaperPlaneTiltIcon weight="duotone" />
           )}
         </button>
       </form>
