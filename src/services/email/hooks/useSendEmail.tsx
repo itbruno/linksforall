@@ -1,5 +1,5 @@
 import { useMutation } from '@tanstack/react-query';
-import { IEmailResponse } from '@services/email/IEmailRepository';
+import { IEmailResponse } from '@services/email/SendEmailRepository';
 import { SendEmailError } from '../SendEmailError';
 
 interface ISendEmailProps {
