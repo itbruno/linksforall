@@ -1,10 +1,10 @@
-import { IEmailRepository, SendMailDTO } from './IEmailRepository';
+import { ISendEmailRepository, ISendMailDTO } from './SendEmailRepository';
 import { SendEmailError } from './SendEmailError';
 
 export class SendEmailUseCase {
-  constructor(private mailProvider: IEmailRepository) {}
+  constructor(private mailProvider: ISendEmailRepository) {}
 
-  async execute(data: SendMailDTO) {
+  async execute(data: ISendMailDTO) {
     const response = await this.mailProvider.sendMail(data);
 
     if (!response.success) {

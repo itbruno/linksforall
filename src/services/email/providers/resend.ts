@@ -1,11 +1,11 @@
 import { Resend } from 'resend';
 import {
-  SendMailDTO,
-  IEmailRepository,
+  ISendMailDTO,
+  ISendEmailRepository,
   IEmailResponse
-} from '../IEmailRepository';
+} from '../SendEmailRepository';
 
-export class ResendMailProvider implements IEmailRepository {
+export class ResendMailProvider implements ISendEmailRepository {
   private resend;
 
   constructor() {
@@ -17,7 +17,7 @@ export class ResendMailProvider implements IEmailRepository {
     this.resend = new Resend(apiKey);
   }
 
-  async sendMail(messageData: SendMailDTO): Promise<IEmailResponse> {
+  async sendMail(messageData: ISendMailDTO): Promise<IEmailResponse> {
     const { from, message, subject, to } = messageData;
 
     try {

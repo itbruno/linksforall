@@ -1,6 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { SendEmail } from 'src/services/email';
-import { SendEmailError } from 'src/services/email/SendEmailError';
 
 export default async function handler(
   req: NextApiRequest,

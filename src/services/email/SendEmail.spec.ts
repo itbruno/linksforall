@@ -1,10 +1,10 @@
 import { SendEmailUseCase } from './SendEmailUseCase';
-import { IEmailRepository } from './IEmailRepository';
+import { ISendEmailRepository } from './SendEmailRepository';
 import { SendEmailError } from './SendEmailError';
 
 describe('Email service', () => {
   test('should send email successfully', async () => {
-    const emailRepositoryMock: IEmailRepository = {
+    const emailRepositoryMock: ISendEmailRepository = {
       sendMail: jest.fn().mockResolvedValue({
         success: true,
         messageId: 'mocked-id'
@@ -29,7 +29,7 @@ describe('Email service', () => {
   });
 
   test('should not send email', async () => {
-    const emailRepositoryMock: IEmailRepository = {
+    const emailRepositoryMock: ISendEmailRepository = {
       sendMail: jest.fn().mockResolvedValue({
         success: false,
         messageId: 'mocked-id'
