@@ -1,6 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { SendEmail } from 'src/services/email';
-import { SendEmailError } from 'src/services/email/SendEmailError';
 
 export default async function handler(
   req: NextApiRequest,
@@ -10,8 +9,8 @@ export default async function handler(
     const { message, email } = req.body;
 
     if (!message || !email) {
-      res.status(400).json({
-        message: `Missing message or email params`
+      return res.status(400).json({
+        message: 'Missing email or message'
       });
     }
 
@@ -29,13 +28,8 @@ export default async function handler(
       if (response.success) {
         return res.status(200).json(response);
       }
-
-      throw new SendEmailError('Email cannot be sent.');
     } catch (err) {
-      console.log(err);
-      res.status(400).json({
-        message: err
-      });
+      return res.status(400).json(err);
     }
   }
 }

@@ -1,6 +1,6 @@
 import UserProps from '@interfaces/user';
 import Image from 'next/image';
-import { CircleWavyCheck } from '@phosphor-icons/react';
+import { CircleWavyCheckIcon } from '@phosphor-icons/react';
 import { SocialLinks } from './SocialLinks';
 
 function Header({ fullname, image, role, socialLinks }: UserProps) {
@@ -22,7 +22,7 @@ function Header({ fullname, image, role, socialLinks }: UserProps) {
           )}
 
           <div className="text-orange-300 absolute bottom-3 right-0 ">
-            <CircleWavyCheck weight="fill" size={28} />
+            <CircleWavyCheckIcon weight="fill" size={28} />
           </div>
         </div>
 

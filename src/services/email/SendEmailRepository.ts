@@ -3,7 +3,7 @@ export interface IEmailContactProps {
   email: string;
 }
 
-export interface SendMailDTO {
+export interface ISendMailDTO {
   from: IEmailContactProps;
   to: string;
   subject: string;
@@ -16,6 +16,6 @@ export interface IEmailResponse {
   error?: string;
 }
 
-export interface IEmailRepository {
-  sendMail(data: SendMailDTO): Promise<IEmailResponse>;
+export interface ISendEmailRepository {
+  sendMail(data: ISendMailDTO): Promise<IEmailResponse>;
 }
