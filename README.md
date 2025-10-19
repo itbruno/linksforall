@@ -155,6 +155,33 @@ export default function Home() {
 }
 ```
 
+## Custom blocks
+
+We're adding the possibility to add custom blocks. By now we have a Contact Form block
+To add, it's needed to be a [Resend](https://resend.com/) account and a [generated API Key](https://resend.com/docs/dashboard/api-keys/introduction)
+
+After generated add to your environment variables and add the ContactFormBlock component inside your template
+
+```tsx
+import { Alpha } from '@themes/alpha';
+import { DATA } from '@lib/data';
+
+export default function Home() {
+  const { user } = DATA;
+  return (
+    <>
+      ...
+      <Alpha data={DATA}>
+        {/* Add this wrapper to center blocks */}
+        <div className="container max-w-lg px-4 flex flex-col gap-6 animate-slide-up">
+          <ContactFormBlock />
+        </div>
+      </Alpha>
+    </>
+  );
+}
+```
+
 ## Environment variables - SEO
 
 We have **Google Analytics 4** pre-configured in the project. And you don't need touch in code to setup, it simple:
