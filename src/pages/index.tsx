@@ -23,11 +23,7 @@ export default function Home() {
         <meta property="og:description" content={user.bio} />
         <meta property="og:type" content="website" />
       </Head>
-      <Alpha data={DATA}>
-        <div className="container max-w-lg px-4 flex flex-col gap-6 animate-slide-up">
-          <ContactFormBlock />
-        </div>
-      </Alpha>
+      <Alpha data={DATA} />
       {GA4ID && <GA4 ga4Id={GA4ID} />}
     </>
   );
